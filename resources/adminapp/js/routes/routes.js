@@ -7,7 +7,7 @@ const View = { template: '<router-view></router-view>' }
 
 const routes = [
   {
-    path: '/',
+    path: '/admin',
     component: () => import('@pages/Layout/DashboardLayout.vue'),
     redirect: 'dashboard',
     children: [
@@ -16,12 +16,6 @@ const routes = [
         name: 'dashboard',
         component: () => import('@pages/Dashboard.vue'),
         meta: { title: 'global.dashboard' }
-      },
-      {
-        path: 'homes',
-        name: 'homes.index',
-        component: () => import('@cruds/Homes/Index.vue'),
-        meta: { title: 'cruds.home.title' }
       },
       {
         path: 'blogs',
@@ -262,7 +256,108 @@ const routes = [
             meta: { title: 'cruds.user.title' }
           }
         ]
+      }
+    ]
+  },
+  {
+    path: '/',
+    component: () => import('@pages/Layout/HomesLayout.vue'),
+    redirect: 'homes',
+    children: [
+      {
+        path: 'homes',
+        name: 'homes.index',
+        component: () => import('@cruds/Homes/Index.vue'),
+        meta: { title: 'cruds.home.title' }
       },
+     /*  {
+        path: 'blogs',
+        name: 'blogs.index',
+        component: () => import('@cruds/Blogs/Index.vue'),
+        meta: { title: 'cruds.blog.title' }
+      },
+      {
+        path: 'blogs/:id',
+        name: 'blogs.show',
+        component: () => import('@cruds/Blogs/Show.vue'),
+        meta: { title: 'cruds.blog.title' }
+      },
+      {
+        path: 'annoucements',
+        name: 'annoucements.index',
+        component: () => import('@cruds/Annoucements/Index.vue'),
+        meta: { title: 'cruds.annoucement.title' }
+      },
+      {
+        path: 'annoucements/:id',
+        name: 'annoucements.show',
+        component: () => import('@cruds/Annoucements/Show.vue'),
+        meta: { title: 'cruds.annoucement.title' }
+      },
+      {
+        path: 'policy-management',
+        name: 'policy_management',
+        component: View,
+        redirect: { name: 'policy_categories.index' },
+        children: [
+          {
+            path: 'policy-categories',
+            name: 'policy_categories.index',
+            component: () => import('@cruds/PolicyCategories/Index.vue'),
+            meta: { title: 'cruds.policyCategory.title' }
+          },
+          {
+            path: 'policy-categories/:id',
+            name: 'policy_categories.show',
+            component: () => import('@cruds/PolicyCategories/Show.vue'),
+            meta: { title: 'cruds.policyCategory.title' }
+          },
+          {
+            path: 'policies',
+            name: 'policies.index',
+            component: () => import('@cruds/Policies/Index.vue'),
+            meta: { title: 'cruds.policy.title' }
+          },
+          {
+            path: 'policies/:id',
+            name: 'policies.show',
+            component: () => import('@cruds/Policies/Show.vue'),
+            meta: { title: 'cruds.policy.title' }
+          }
+        ]
+      },
+      {
+        path: 'download-management',
+        name: 'download_management',
+        component: View,
+        redirect: { name: 'download_categories.index' },
+        children: [
+          {
+            path: 'download-categories',
+            name: 'download_categories.index',
+            component: () => import('@cruds/DownloadCategories/Index.vue'),
+            meta: { title: 'cruds.downloadCategory.title' }
+          },
+          {
+            path: 'download-categories/:id',
+            name: 'download_categories.show',
+            component: () => import('@cruds/DownloadCategories/Show.vue'),
+            meta: { title: 'cruds.downloadCategory.title' }
+          },
+          {
+            path: 'downloads',
+            name: 'downloads.index',
+            component: () => import('@cruds/Downloads/Index.vue'),
+            meta: { title: 'cruds.download.title' }
+          },
+          {
+            path: 'downloads/:id',
+            name: 'downloads.show',
+            component: () => import('@cruds/Downloads/Show.vue'),
+            meta: { title: 'cruds.download.title' }
+          }
+        ]
+      }, */
       {
         path: 'aboutuses',
         name: 'aboutuses.index',
@@ -275,6 +370,6 @@ const routes = [
 
 export default new VueRouter({
   mode: 'history',
-  base: '/admin',
+  base: '/',
   routes
 })
