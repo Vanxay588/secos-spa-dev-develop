@@ -33,12 +33,6 @@ export default {
           icon: 'dashboard',
           path: { name: 'dashboard' }
         },
-       /*  {
-          title: 'cruds.home.title',
-          icon: 'table_view',
-          path: { name: 'homes.index' },
-          gate: 'home_access'
-        }, */
         {
           title: 'cruds.blog.title',
           icon: 'table_view',
@@ -117,12 +111,7 @@ export default {
             }
           ]
         },
-       /*  {
-          title: 'cruds.aboutUs.title',
-          icon: 'table_view',
-          path: { name: 'aboutuses.index' },
-          gate: 'about_us_access'
-        } */
+
       ]
     }
   }
