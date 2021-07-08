@@ -74,8 +74,7 @@ export default {
         {
           title: 'cruds.aboutUs.title',
           icon: 'table_view',
-          path: { name: 'aboutuses.index' },
-          gate: 'about_us_access'
+          path: { name: 'aboutuses.index' }
         } 
       ]
     }
