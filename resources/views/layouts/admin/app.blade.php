@@ -3,12 +3,13 @@
 
 <head>
 
-    <!-- Default -->
+    <!--meta Default -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <!-- SEO -->
+    <!--meta SEO -->
     <meta name="description" content="{{ trans('panel.site_title') }}">
     <meta name="keywords" content="Sangha Education Commission Office of Savannakhet">
     <meta name="author" content="Sangha Education Commission Office of Savannakhet">
