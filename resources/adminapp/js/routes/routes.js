@@ -261,7 +261,7 @@ const routes = [
   },
   {
     path: '/',
-    component: () => import('@pages/Layout/HomesLayout.vue'),
+    component: () => import('@pages/Layout/Homes.vue'),
     redirect: 'homes',
     children: [
       {
