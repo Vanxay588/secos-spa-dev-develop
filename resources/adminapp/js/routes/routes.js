@@ -269,12 +269,6 @@ const routes = [
         name: 'homes.index',
         component: () => import('@cruds/Homes/Index.vue'),
         meta: { title: 'cruds.home.title' }
-      },
-      {
-        path: 'aboutuses',
-        name: 'aboutuses.index',
-        component: () => import('@cruds/Aboutuses/Index.vue'),
-        meta: { title: 'cruds.aboutUs.title' }
       }
     ]
   }
