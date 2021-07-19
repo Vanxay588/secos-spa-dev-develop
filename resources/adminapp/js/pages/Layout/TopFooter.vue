@@ -1,6 +1,6 @@
 <template>
 <div >
-    <ul class="nav justify-content-center bg-success" >
+    <ul class="nav justify-content-center bg-success">
        <li class="nav-item" >
          <a class="nav-link " href="#homes">{{ $t('cruds.home.title') }}</a>
       </li>
