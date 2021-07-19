@@ -1,23 +1,23 @@
 <template>
    <div>
-  <!--   <div>
+    <div>
       <div class="container-fluid">
         <div class="row justify-content-center">
              <TopHeader></TopHeader>
         </div>
      </div>
-    </div> -->
+    </div>
     
    <!--  <div>
       
              <Navbar></Navbar>
        
     </div> -->
-      <div>
+     <!--  <div>
       
        <TopFooter></TopFooter>
        
-    </div>
+    </div> -->
    </div>
    
 </template>

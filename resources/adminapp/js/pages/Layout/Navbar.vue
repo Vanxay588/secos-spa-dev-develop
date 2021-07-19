@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg bg-info fixed-top">
+<nav class="navbar navbar-expand-lg bg-success fixed-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-bar navbar-kebab"></span>
