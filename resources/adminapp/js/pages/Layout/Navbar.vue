@@ -44,3 +44,11 @@
   </div>
 </nav>
 </template>
+<style scoped>
+
+  
+  a:hover {
+      text-decoration: none;
+      color:#ffc600;
+      }
+</style>
