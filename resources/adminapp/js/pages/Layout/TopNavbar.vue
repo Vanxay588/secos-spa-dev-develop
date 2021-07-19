@@ -29,7 +29,6 @@
           <top-navbar-languages />
         </ul>
       </div>
-          <a href="/homes" target="_blank" style="t" ><i class="material-icons">home</i></a>
     </div>
   </nav>
 </template>
