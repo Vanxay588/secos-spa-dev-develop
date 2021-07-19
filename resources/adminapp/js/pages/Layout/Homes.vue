@@ -1,5 +1,5 @@
 <template>
-   <div>
+   
    <!--  <div>
       <div class="container-fluid">
         <div class="row justify-content-center">
@@ -8,16 +8,20 @@
      </div>
     </div> -->
     
- <!--    <div>
+  <!--   <div>
       
              <Navbar></Navbar>
        
     </div> -->
-      <div>
+      <!-- <div>
       
              <TopFooter></TopFooter>
        
-    </div>
+    </div> -->
+    <!-- <annoucements></annoucements>
+   </div> -->
+   <div>
+     <download-categories></download-categories>
    </div>
    
 </template>
@@ -27,13 +31,16 @@
 import TopHeader from './TopHeader.vue'
 import Navbar from './Navbar.vue'
 import TopFooter from './TopFooter.vue'
-
+import Annoucements from './Annoucements.vue'
+import DownloadCategories from './DownloadCategories.vue'
 
 export default {
   components: {
     TopHeader,
       TopFooter,
-      Navbar
+      Navbar,
+      Annoucements,
+      DownloadCategories
   }
 }
 </script>

@@ -2,7 +2,7 @@
   <nav
     class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top"
   >
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-wrapper">
         <div class="navbar-brand">
           {{ $t($route.meta.title) }}
@@ -25,12 +25,17 @@
       </button>
       <!-- Collapsable -->
       <div class="collapse navbar-collapse">
-        <a href="/homes" target="_blank" rel="noopener noreferrer"><i class="material-icons">home</i></a>
+        
+    
+      
     
         <ul class="navbar-nav">
           <top-navbar-languages />
         </ul>
       </div>
+        
+          <a href="/homes" target="_blank" style="t" ><i class="material-icons">home</i></a>
+      
       
     </div>
   </nav>
