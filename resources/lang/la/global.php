@@ -102,7 +102,7 @@ return [
     'action'                               => 'Action',
     'action_id'                            => 'Action id',
     'action_model'                         => 'Action model',
-    'address'                              => 'ວັດໄຊຍະພູມມາຣາມ',
+    'address'                              => 'ວັດໄຊຍະພູມ',
     'administrator_can_create_other_users' => 'Administrator (can create other users)',
     'aggregate_function_use'               => 'Aggregate function to use',
     'all'                                  => 'All',
