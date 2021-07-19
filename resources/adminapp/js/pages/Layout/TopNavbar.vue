@@ -25,18 +25,11 @@
       </button>
       <!-- Collapsable -->
       <div class="collapse navbar-collapse">
-        
-    
-      
-    
         <ul class="navbar-nav">
           <top-navbar-languages />
         </ul>
       </div>
-        
           <a href="/homes" target="_blank" style="t" ><i class="material-icons">home</i></a>
-      
-      
     </div>
   </nav>
 </template>

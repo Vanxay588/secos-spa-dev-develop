@@ -12,9 +12,9 @@ class UsersTableSeeder extends Seeder
         $users = [
             [
                 'id'             => 1,
-                'name'           => 'Admin',
-                'email'          => 'admin@admin.com',
-                'password'       => bcrypt('password'),
+                'name'           => 'Vanxay',
+                'email'          => 'Vanxay588@gmail.com',
+                'password'       => bcrypt('NQ17401061'),
                 'remember_token' => null,
                 'surname'        => '',
             ],
