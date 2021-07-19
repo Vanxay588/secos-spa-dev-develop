@@ -35,19 +35,19 @@ export default {
         },
         {
           title: 'cruds.blog.title',
-          icon: 'table_view',
+          icon: 'feed',
           path: { name: 'blogs.index' },
           gate: 'blog_access'
         },
         {
           title: 'cruds.annoucement.title',
-          icon: 'table_view',
+          icon: 'announcement',
           path: { name: 'annoucements.index' },
           gate: 'annoucement_access'
         },
         {
           title: 'cruds.policyManagement.title',
-          icon: 'table_view',
+          icon: 'campaign',
           path: { name: 'policy_management' },
           gate: 'policy_management_access',
           children: [
@@ -67,7 +67,7 @@ export default {
         },
         {
           title: 'cruds.downloadManagement.title',
-          icon: 'table_view',
+          icon: 'download',
           path: { name: 'download_management' },
           gate: 'download_management_access',
           children: [

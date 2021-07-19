@@ -212,7 +212,7 @@ return [
         ],
     ],
     'aboutUs' => [
-        'title'          => 'ວັດໄຊຍະພູມ ນະະຄອນໄກສອນ',
-        'title_singular' => 'ວັດໄຊຍະພູມ ນະະຄອນໄກສອນ',
+        'title'          => 'About Us',
+        'title_singular' => 'About Us',
     ],
 ];

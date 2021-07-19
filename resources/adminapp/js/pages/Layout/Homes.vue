@@ -1,19 +1,22 @@
 <template>
    <div>
-    <div>
+  <!--   <div>
       <div class="container-fluid">
         <div class="row justify-content-center">
              <TopHeader></TopHeader>
         </div>
      </div>
-    </div>
+    </div> -->
     
-    <div>
-      <div class="container-fluid">
-        <div class="row justify-content-center">
+   <!--  <div>
+      
              <Navbar></Navbar>
-        </div>
-     </div>
+       
+    </div> -->
+      <div>
+      
+             <TopFooter></TopFooter>
+       
     </div>
    </div>
    
@@ -23,11 +26,13 @@
 
 import TopHeader from './TopHeader.vue'
 import Navbar from './Navbar.vue'
+import TopFooter from './TopFooter.vue'
 
 
 export default {
   components: {
     TopHeader,
+      TopFooter,
       Navbar
   }
 }

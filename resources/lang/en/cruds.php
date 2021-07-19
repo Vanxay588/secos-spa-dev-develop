@@ -212,7 +212,7 @@ return [
         ],
     ],
     'aboutUs' => [
-        'title'          => 'Xaiyaphoum temple',
-        'title_singular' => 'Xaiyaphoum temple',
+        'title'          => 'About Us',
+        'title_singular' => 'About Us',
     ],
 ];

@@ -9,7 +9,7 @@ return [
     'moment_datetime_format' => 'DD/MM/YYYY HH:mm:ss',
     'supported_languages'    => [
         [
-            'title'      => 'Lao',
+            'title'      => 'ພາສາລາວ',
             'short_code' => 'la',
         ],
         [

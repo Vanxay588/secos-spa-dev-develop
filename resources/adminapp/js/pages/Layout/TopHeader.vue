@@ -1,9 +1,9 @@
 <template>
-         <nav class="navbar navbar-expand-sm bg-success navbar-absolute ">
-           <div class="container">
-            <i class="fa fa-map-marker"></i><span>&nbsp;{{ $t('cruds.aboutUs.title') }}</span> &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-phone"></i><span>&nbsp;02022618243</span>&nbsp;&nbsp;&nbsp;
-            <i class="fa fa-envelope-o"></i><span><a href="mailto:Inthapunya@gmail.com">&nbsp;Inthapunya@gmail.com</a></span>
+    <nav class="navbar navbar-expand-sm bg-success navbar-absolute ">
+      <div class="container">
+        <i class="fa fa-map-marker"></i><span><a href="#aboutUs">&nbsp; {{ $t('global.address') }}</a></span> &nbsp;&nbsp;&nbsp;
+        <i class="fa fa-phone"></i><span>&nbsp;02022618243</span>&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-envelope-o"></i><span><a href="mailto:Inthapunya@gmail.com">&nbsp;Inthapunya@gmail.com</a></span>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,9 +28,8 @@
                 <top-navbar-languages />
               </ul>
           </div>
-          
-          </div>
-         </nav>
+      </div>
+  </nav>
 </template>
 
 <script>

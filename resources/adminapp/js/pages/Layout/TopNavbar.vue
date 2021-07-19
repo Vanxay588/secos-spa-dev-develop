@@ -24,11 +24,14 @@
         <span class="navbar-toggler-icon icon-bar"></span>
       </button>
       <!-- Collapsable -->
-      <div class="collapse navbar-collapse justify-content-end">
+      <div class="collapse navbar-collapse">
+        <a href="/homes" target="_blank" rel="noopener noreferrer"><i class="material-icons">home</i></a>
+    
         <ul class="navbar-nav">
           <top-navbar-languages />
         </ul>
       </div>
+      
     </div>
   </nav>
 </template>
