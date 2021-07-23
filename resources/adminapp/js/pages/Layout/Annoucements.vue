@@ -7,7 +7,7 @@
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
-            <h4 class="card-title">
+            <h4 class="card-title" id="Annoucements">
               {{ $t('global.table') }}
               <strong>{{ $t('cruds.annoucement.title') }}</strong>
             </h4>

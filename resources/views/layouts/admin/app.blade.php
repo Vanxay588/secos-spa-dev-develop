@@ -26,8 +26,8 @@
     <title>{{ trans('panel.site_title') }}</title>
 
     <!-- Logo and Icon app-->
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/md/img/apple-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ url('/md/img/vue.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/images/icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('/images/logo.png') }}">
 
     <!-- Font and Icon -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

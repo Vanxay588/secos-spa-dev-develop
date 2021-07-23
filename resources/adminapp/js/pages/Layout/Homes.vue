@@ -1,47 +1,11 @@
 <template>
-
-<!-- <div class="root">
-    <div class="Top-header">
-       <div class="container-fluid">
-        <div class="row justify-content-center">
-            
-        </div>
-     </div>
-    </div>
-    <div class="Navbar">
-        
-    </div>
-    <div class="logo">
-
-    </div>
-    <div class="main-panel">
-
-    </div>
-    <div class="Footer">
-     
-    </div>
-    
-</div> -->
-   
-   
-     
-    <!-- 
-    
-   
-   
-    
-
-    <div><annoucements></annoucements></div>
-
-    <div><download-categories></download-categories></div>
-    -->
-    <!-- <ButtomFooter></ButtomFooter> -->
-    <!--  <TopFooter></TopFooter> -->
-    <!--  <TopHeader></TopHeader> -->
-    <!--  <div><Navbar></Navbar></div>  -->
-   <!--  <Annoucements></Annoucements> fail --> 
    <div>
-
+      <TopHeader></TopHeader>
+      <Navbar></Navbar>
+      <homes-photo></homes-photo>
+      <Annoucements></Annoucements>
+      <TopFooter></TopFooter>
+      <ButtomFooter></ButtomFooter>
    </div>
 </template>
 
@@ -53,7 +17,7 @@ import TopFooter from './TopFooter.vue'
 import Annoucements from './Annoucements.vue'
 import DownloadCategories from './DownloadCategories.vue'
 import ButtomFooter from './ButtomFooter.vue'
-
+import HomesPhoto from './HomesPhoto.vue'
 export default {
   components: {
     TopHeader,
@@ -61,7 +25,8 @@ export default {
       Navbar,
       Annoucements,
       DownloadCategories,
-      ButtomFooter
+      ButtomFooter,
+      HomesPhoto
   }
 }
 </script>

@@ -1,5 +1,7 @@
 <?php
 
 return [
-    'site_title' => 'Sangha Education Commission Office of Savannakhet',
+    'site_title' => 'ຫ້ອງການກຳມາທິການສຶກສາສົງແຂວງ',
+    'welcome'    => 'ຍິນດີຕ້ອນຮັບ',
+    'Made'      => 'ສ້າງໂດຍ',
 ];

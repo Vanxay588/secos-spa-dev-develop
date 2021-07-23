@@ -1,5 +1,6 @@
 <template>
-    <div class="footer">
+  <div class="footer">
+    <div class="container">
         <ul >
           <li >
             <a href="#homes">{{ $t('cruds.home.title') }}</a>
@@ -21,10 +22,12 @@
           </li>
         </ul>
     </div> 
+  </div>
 </template>
 <style scoped>
       .footer {
-        position: fixed;
+         clear: both;
+    position: relative;
         left: 0;
         bottom: 0;
         width: 100%;
