@@ -20,14 +20,17 @@
           <li >
             <a  href="#aboutUs">{{ $t('cruds.aboutUs.title') }}</a>
           </li>
+           <li >
+            <a  href="#contactUs">{{ $t('cruds.contactUs.title') }}</a>
+          </li>
         </ul>
     </div> 
   </div>
 </template>
 <style scoped>
       .footer {
-         clear: both;
-    position: relative;
+        clear: both;
+        position: relative;
         left: 0;
         bottom: 0;
         width: 100%;

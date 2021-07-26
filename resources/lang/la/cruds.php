@@ -72,8 +72,8 @@ return [
         ],
     ],
     'home' => [
-        'title'          => 'Home',
-        'title_singular' => 'Home',
+        'title'          => 'ໜ້າຫຼັກ',
+        'title_singular' => 'ໜ້າຫຼັກ',
     ],
     'annoucement' => [
         'title'          => 'ແຈ້ງການ',
@@ -190,8 +190,8 @@ return [
         ],
     ],
     'blog' => [
-        'title'          => 'ການເຄື່ອນໄຫວ',
-        'title_singular' => 'ການເຄື່ອນໄຫວ',
+        'title'          => 'ບລັອກ',
+        'title_singular' => 'ບລັອກ',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
@@ -212,7 +212,11 @@ return [
         ],
     ],
     'aboutUs' => [
-        'title'          => 'About Us',
-        'title_singular' => 'About Us',
+        'title'          => 'ກ່ຽວກັບພວກເຮົາ',
+        'title_singular' => 'ກ່ຽວກັບພວກເຮົາ',
+    ],
+    'contactUs' => [
+        'title'          => 'ຕິດຕໍ່ພວກເຮົາ',
+        'title_singular' => 'ຕິດຕໍ່ພວກເຮົາ',
     ],
 ];

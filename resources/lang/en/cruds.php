@@ -215,4 +215,8 @@ return [
         'title'          => 'About Us',
         'title_singular' => 'About Us',
     ],
+    'contactUs' => [
+        'title'          => 'Contact Us',
+        'title_singular' => 'Contact Us',
+    ],
 ];

@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+    <div class="row" id="Annoucements">
       <div class="col-md-12">
         <div class="card">
           <div class="card-header card-header-primary card-header-icon">
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
-            <h4 class="card-title" id="Annoucements">
+            <h4 class="card-title" >
               {{ $t('global.table') }}
               <strong>{{ $t('cruds.annoucement.title') }}</strong>
             </h4>

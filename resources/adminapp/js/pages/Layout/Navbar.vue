@@ -1,6 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg bg-success fixed-top">
   <div class="container">
+       <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-bar navbar-kebab"></span>
     <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -44,11 +45,3 @@
   </div>
 </nav>
 </template>
-<style scoped>
-
-  
-  a:hover {
-      text-decoration: none;
-      color:#ffc600;
-      }
-</style>
