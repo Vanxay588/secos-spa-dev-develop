@@ -116,21 +116,22 @@
     margin-top: 15vh;
   }
   .home-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/Banner.jpg');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top: 0px;
+    z-index: 998;
     }
 
     .home-text {
-    text-align: left;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: ghostwhite;
     }
 
     
@@ -141,14 +142,15 @@
 
 .about-section .content-column{
 	position:relative;
-  padding: 50px;
+  padding: 40px;
   background-color: ghostwhite;
+  border-radius: 6px;
 }
 
 .about-section .content-column .text{
 	position:relative;
-	color:#777777;
-	font-size:15px;
+	color:#333333;
+	font-size:16px;
 	line-height:2em;
 	margin-bottom:40px;
   
@@ -218,7 +220,7 @@
 }
 #button {
   display: inline-block;
-  background-color: #4caf50;
+  background-color: #2196f3;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -231,7 +233,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  border: 3px solid gold;
+  border: 3px solid #ffc600;
 }
 #button::after {
   content: "\f077";
@@ -240,7 +242,7 @@
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
+  color: ghostwhite!important;
 }
 #button:hover {
   cursor: pointer;

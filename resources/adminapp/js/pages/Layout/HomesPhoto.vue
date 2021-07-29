@@ -1,5 +1,5 @@
 <template>
-    <div class="home-image">
+    <div class="home-image" id="homes">
         <div class="home-text">
           <h1>{{ $t('panel.welcome') }}</h1>
           <p>And I'm a Photographer</p>
@@ -20,3 +20,17 @@
         </div>
     </div>
 </template>
+<style>
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+        color: ghostwhite;
+        padding-bottom: 25px;
+    }
+    p{
+        font-size: 18px;
+        color: ghostwhite;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+</style>

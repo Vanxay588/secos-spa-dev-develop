@@ -34,9 +34,10 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: #4caf50!important;
-        color: aliceblue;
+        background-color: ghostwhite!important;
+        color: #333333;
         text-align: center;
+        border-top: 3px solid #ffc600;
       }
       .footer ul {
         margin-bottom: 0;

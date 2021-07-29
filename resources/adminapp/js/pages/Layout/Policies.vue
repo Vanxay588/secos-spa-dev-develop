@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="annoucements">
+  <div class="container" id="policy">
     <div class="row">
       <div class="col-md-12">
         <div class="card">
@@ -9,7 +9,7 @@
             </div>
             <h4 class="card-title">
               {{ $t('global.table') }}
-              <strong>{{ $t('cruds.annoucement.title') }}</strong>
+              <strong>{{ $t('cruds.policy.title') }}</strong>
             </h4>
           </div>
           <div class="card-body">
@@ -31,20 +31,20 @@
                   :pageSizeOptions="[10, 25, 50, 100]"
                 >
                   <global-search :query="query" class="pull-left" />
-                  <span style="margin-left:10%">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      @click="fetchIndexData"
-                      :disabled="loading"
-                      :class="{ disabled: loading }"
-                      >
-                      <i class="material-icons" :class="{ 'fa-spin': loading }">
-                      refresh
-                      </i>
-                      {{ $t('global.refresh') }}
-                    </button>
-                  </span>
+                   <span style="margin-left:10%">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        @click="fetchIndexData"
+                        :disabled="loading"
+                        :class="{ disabled: loading }"
+                        >
+                        <i class="material-icons" :class="{ 'fa-spin': loading }">
+                            refresh
+                        </i>
+                        {{ $t('global.refresh') }}
+                      </button>
+                    </span>
                   <header-settings :columns="columns" class="pull-right" />
                 </datatable>
               </div>
@@ -62,6 +62,7 @@ import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 
 export default {
   components: {
@@ -72,53 +73,54 @@ export default {
     return {
       columns: [
         {
-          title: 'cruds.annoucement.fields.id',
+          title: 'cruds.policy.fields.id',
           field: 'id',
           thComp: TranslatedHeader,
           sortable: true,
           colStyle: 'width: 100px;'
         },
         {
-          title: 'cruds.annoucement.fields.annoucement',
-          field: 'annoucement',
+          title: 'cruds.policy.fields.policy',
+          field: 'policy',
           thComp: TranslatedHeader,
           tdComp: DatatableAttachments
         },
         {
-          title: 'cruds.annoucement.fields.name',
+          title: 'cruds.policy.fields.name',
           field: 'name',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.annoucement.fields.number',
-          field: 'number',
+          title: 'cruds.policy.fields.categories',
+          field: 'categories.categories',
+          thComp: TranslatedHeader,
+          tdComp: DatatableSingle,
+          sortable: true
+        },
+        {
+          title: 'cruds.policy.fields.level_no',
+          field: 'level_no',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.annoucement.fields.short_name',
-          field: 'short_name',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.annoucement.fields.allow_date',
+          title: 'cruds.policy.fields.allow_date',
           field: 'allow_date',
           thComp: TranslatedHeader,
           sortable: true
         },
-        {
-          title: 'cruds.annoucement.fields.description',
+       {
+          title: 'cruds.policy.fields.description',
           field: 'description',
           thComp: TranslatedHeader,
         }
       ],
       query: { sort: 'id', order: 'desc', limit: 100, s: '' },
       xprops: {
-        module: 'AnnoucementsIndex',
-        route: 'annoucements',
-        permission_prefix: 'annoucement_'
+        module: 'PoliciesIndex',
+        route: 'policies',
+        permission_prefix: 'policy_'
       }
     }
   },
@@ -126,7 +128,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('AnnoucementsIndex', ['data', 'total', 'loading'])
+    ...mapGetters('PoliciesIndex', ['data', 'total', 'loading'])
   },
   watch: {
     query: {
@@ -138,11 +140,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('AnnoucementsIndex', [
-      'fetchIndexData',
-      'setQuery',
-      'resetState'
-    ])
+    ...mapActions('PoliciesIndex', ['fetchIndexData', 'setQuery', 'resetState'])
   }
 }
 </script>

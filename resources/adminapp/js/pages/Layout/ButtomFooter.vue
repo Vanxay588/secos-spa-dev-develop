@@ -18,7 +18,7 @@
     width: 100%;
     text-align: center;
     padding: 5px;
-    color: aliceblue;
+    color:ghostwhite;
     border-top: 4px solid darkslateblue;  
     }
 </style>

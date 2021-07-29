@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="annoucements">
+  <div class="container" id="download">
     <div class="row">
       <div class="col-md-12">
         <div class="card">
@@ -9,7 +9,7 @@
             </div>
             <h4 class="card-title">
               {{ $t('global.table') }}
-              <strong>{{ $t('cruds.annoucement.title') }}</strong>
+              <strong>{{ $t('cruds.download.title') }}</strong>
             </h4>
           </div>
           <div class="card-body">
@@ -33,16 +33,16 @@
                   <global-search :query="query" class="pull-left" />
                   <span style="margin-left:10%">
                     <button
-                      type="button"
-                      class="btn btn-default"
-                      @click="fetchIndexData"
-                      :disabled="loading"
-                      :class="{ disabled: loading }"
-                      >
-                      <i class="material-icons" :class="{ 'fa-spin': loading }">
-                      refresh
-                      </i>
-                      {{ $t('global.refresh') }}
+                    type="button"
+                    class="btn btn-default"
+                    @click="fetchIndexData"
+                    :disabled="loading"
+                    :class="{ disabled: loading }"
+                    >
+                    <i class="material-icons" :class="{ 'fa-spin': loading }">
+                        refresh
+                    </i>
+                    {{ $t('global.refresh') }}
                     </button>
                   </span>
                   <header-settings :columns="columns" class="pull-right" />
@@ -62,6 +62,8 @@ import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
+import DatatablePictures from '@components/Datatables/DatatablePictures'
 
 export default {
   components: {
@@ -72,53 +74,43 @@ export default {
     return {
       columns: [
         {
-          title: 'cruds.annoucement.fields.id',
+          title: 'cruds.download.fields.id',
           field: 'id',
           thComp: TranslatedHeader,
           sortable: true,
           colStyle: 'width: 100px;'
         },
         {
-          title: 'cruds.annoucement.fields.annoucement',
-          field: 'annoucement',
+          title: 'cruds.download.fields.download',
+          field: 'download',
           thComp: TranslatedHeader,
           tdComp: DatatableAttachments
         },
         {
-          title: 'cruds.annoucement.fields.name',
+          title: 'cruds.download.fields.name',
           field: 'name',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.annoucement.fields.number',
-          field: 'number',
+          title: 'cruds.download.fields.categories',
+          field: 'categories.categories',
           thComp: TranslatedHeader,
+          tdComp: DatatableSingle,
           sortable: true
         },
         {
-          title: 'cruds.annoucement.fields.short_name',
-          field: 'short_name',
+          title: 'cruds.download.fields.photo',
+          field: 'photo',
           thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.annoucement.fields.allow_date',
-          field: 'allow_date',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.annoucement.fields.description',
-          field: 'description',
-          thComp: TranslatedHeader,
+          tdComp: DatatablePictures
         }
       ],
       query: { sort: 'id', order: 'desc', limit: 100, s: '' },
       xprops: {
-        module: 'AnnoucementsIndex',
-        route: 'annoucements',
-        permission_prefix: 'annoucement_'
+        module: 'DownloadsIndex',
+        route: 'downloads',
+        permission_prefix: 'download_'
       }
     }
   },
@@ -126,7 +118,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('AnnoucementsIndex', ['data', 'total', 'loading'])
+    ...mapGetters('DownloadsIndex', ['data', 'total', 'loading'])
   },
   watch: {
     query: {
@@ -138,7 +130,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('AnnoucementsIndex', [
+    ...mapActions('DownloadsIndex', [
       'fetchIndexData',
       'setQuery',
       'resetState'

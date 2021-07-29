@@ -10,11 +10,19 @@
                     		<div class="title" >{{ $t('cruds.contactUs.title') }}</div>
                         </div>
                         <div class="text">
-                             <strong><h4>{{ $t('panel.office_location') }}</h4></strong> 
+                             <h4>{{ $t('cruds.contactUs.office_location') }}</h4>
                              <div class="singel-address">
-                                 <i class="material-icons">house</i>  {{ $t('panel.full_location') }}
+                               <i class="fa fa-home" aria-hidden="true" style="padding:15px"></i>
+                                {{ $t('cruds.contactUs.full_location') }}
                              </div>
-                            
+                             <div class="singel-address">
+                                <i class="fa fa-phone" aria-hidden="true" style="padding:15px"></i>
+                                {{ $t('cruds.contactUs.phone') }}
+                             </div>
+                             <div class="singel-address">
+                                <i class="fa fa-envelope-o" aria-hidden="true" style="padding:15px"></i>
+                               <a href="mailto:Inthapunya@gmail.com">Inthapunya@gmail.com</a>
+                             </div>
                         </div>
                 </div>
             </div>
@@ -22,5 +30,10 @@
      </div>
 </template>
 <style scoped>
-    
+    a{
+        color: #333333;
+    }
+    a:hover{
+        color:#ffc600;
+    }
 </style>
