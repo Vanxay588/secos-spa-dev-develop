@@ -161,15 +161,15 @@
 }
 
 .about-section .image-column .inner-column .image .overlay-box{
-	position:absolute;
+	position:relative;
 	left:40px;
 	bottom:48px;
 }
 
 .about-section .image-column .inner-column .image .overlay-box .year-box{
-	position:relative;
+	position:absolute;
 	color:#252525;
-	font-size:24px;
+	font-size:16px;
 	font-weight:700;
 	line-height:1.4em;
 	padding-left:125px;
@@ -252,4 +252,13 @@
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+.about-image{
+  background-image: url('/images/structure.png');
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
 }

@@ -26,7 +26,7 @@
     <title>{{ trans('panel.site_title') }}</title>
 
     <!-- Logo and Icon app-->
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/images/icon.png') }}">
+    <link rel="shortcut icon" sizes="96x96" href="{{ asset('/images/logo.ico') }}">
     <link rel="icon" type="image/png" href="{{ url('/images/logo.png') }}">
 
     <!-- Font and Icon -->

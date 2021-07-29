@@ -1,11 +1,11 @@
 <template>
    <div>
-      <TopHeader></TopHeader>
-     <!--  <Navbar></Navbar> -->
+      <!-- <TopHeader></TopHeader> -->
+      <Navbar></Navbar>
       <homes-photo></homes-photo>
       <Annoucements></Annoucements>
       <about-us></about-us>
-      
+      <hr>
       <contact></contact>
       <TopFooter></TopFooter>
       <ButtomFooter></ButtomFooter>

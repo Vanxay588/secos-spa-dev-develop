@@ -14,7 +14,7 @@
                 <div class="image-column col-md-6 col-sm-12 col-xs-12">
                 	<div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
                     	<div class="image">
-                        	<img src="https://i.ibb.co/vQbkKj7/about.jpg" alt="">
+                            <div class="about-image"></div>
                             <div class="overlay-box">
                             	<div class="year-box">Years Experience Working</div>
                             </div>
