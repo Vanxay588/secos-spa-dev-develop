@@ -45,7 +45,7 @@ export default {
 </script>
 <style scoped>
     a {
-      color: aliceblue;
+      color: ghostwhite;
       }
     a:hover {
       text-decoration: none;

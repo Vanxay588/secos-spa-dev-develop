@@ -9,7 +9,7 @@
             <a href="#blog">{{ $t('cruds.blog.title') }}</a>
           </li>
           <li >
-            <a  href="#Annoucements">{{ $t('cruds.annoucement.title') }}</a>
+            <a  href="#annoucements">{{ $t('cruds.annoucement.title') }}</a>
           </li>
           <li >
             <a  href="#policy">{{ $t('cruds.policy.title') }}</a>
