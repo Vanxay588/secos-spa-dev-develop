@@ -17,7 +17,6 @@ class PolicyApiController extends Controller
 {
     public function index()
     {
-        abort_if(Gate::denies('policy_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new PolicyResource(Policy::with(['categories'])->advancedFilter());
     }

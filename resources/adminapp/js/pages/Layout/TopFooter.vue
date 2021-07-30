@@ -35,7 +35,7 @@
         bottom: 0;
         width: 100%;
         background-color: ghostwhite!important;
-        color: #333333;
+        color: lightseagreen;
         text-align: center;
         border-top: 3px solid #ffc600;
       }

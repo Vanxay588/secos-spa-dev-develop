@@ -17,7 +17,6 @@ class DownloadApiController extends Controller
 {
     public function index()
     {
-        abort_if(Gate::denies('download_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new DownloadResource(Download::with(['categories'])->advancedFilter());
     }

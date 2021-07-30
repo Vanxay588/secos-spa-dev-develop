@@ -170,7 +170,7 @@
 
 .about-section .image-column .inner-column .image .overlay-box .year-box{
 	position:absolute;
-	color:#252525;
+	color:#333333;
 	font-size:16px;
 	font-weight:700;
 	line-height:1.4em;
@@ -220,7 +220,7 @@
 }
 #button {
   display: inline-block;
-  background-color: #2196f3;
+  background-color:lightseagreen;
   width: 50px;
   height: 50px;
   text-align: center;

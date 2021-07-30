@@ -1,7 +1,7 @@
 <template>
    <div>
-      <TopHeader></TopHeader>
-     <!--  <Navbar></Navbar> -->
+      <!-- <TopHeader></TopHeader> -->
+      <Navigation></Navigation>
       <homes-photo></homes-photo>
       <div class="container">
         <Annoucements></Annoucements>
@@ -20,7 +20,6 @@
 </template>
 <script>
 import TopHeader from './TopHeader.vue'
-import Navbar from './Navbar.vue'
 import TopFooter from './TopFooter.vue'
 import AboutUs from './AboutUs.vue'
 import Contact from './Contact.vue'
@@ -29,18 +28,19 @@ import Download from './Download.vue'
 import ButtomFooter from './ButtomFooter.vue'
 import HomesPhoto from './HomesPhoto.vue'
 import Policies   from  './Policies.vue'
+import Navigation from   './Navigation.vue'
 export default {
   components: {
     TopHeader,
       TopFooter,
-      Navbar,
       Annoucements,
       Policies,
       Download,
       ButtomFooter,
       HomesPhoto,
       AboutUs,
-      Contact
+      Contact,
+      Navigation
   }
 }
 </script>

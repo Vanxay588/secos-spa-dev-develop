@@ -19,12 +19,15 @@
                 </div>
                 <div class="image-column col-md-6 col-sm-12 col-xs-12">
                 	<div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                    	<div class="image">
+                        <div class="container">
+                            <div class="image">
                             <div class="about-image"></div>
                             <div class="overlay-box">
                             	<div class="year-box">{{ $t('cruds.aboutUs.structure') }}</div>
                             </div>
                         </div>
+                        </div>
+                    	
                     </div>
                 </div>
             </div>
