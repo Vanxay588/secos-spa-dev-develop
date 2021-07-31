@@ -24,7 +24,7 @@
             <a  href="#policy">{{ $t('cruds.policy.title') }}</a>
           </li>
           <li>
-          <a href="#download"> {{ $t('cruds.download.title') }}</a>
+            <a  href="#download"> {{ $t('cruds.download.title') }}</a>
           </li>
           <li>
             <a  href="#aboutUs">{{ $t('cruds.aboutUs.title') }}</a>

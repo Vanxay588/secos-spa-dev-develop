@@ -1,12 +1,12 @@
 <template>
     <div class="home-image" id="homes">
         <div class="home-text">
-          <h1>{{ $t('panel.welcome') }}&nbsp;&nbsp;&nbsp;{{ $t('panel.site_title') }}</h1>
+          <h1>{{ $t('panel.welcome') }}&nbsp;&nbsp;{{ $t('panel.site_title') }}</h1>
             <p class="tagline">
               <span class="change-container">
-                <span class="changing">get what you want</span>
-                <span class="changing">how you want it</span>
-                <span class="changing">when you want it</span>
+                <span class="changing">{{ $t('panel.slogan1') }}</span>
+                <span class="changing">{{ $t('panel.slogan2') }}</span>
+                <span class="changing">{{ $t('panel.slogan3') }}</span>
               </span>
             </p>
             <span>
@@ -25,7 +25,7 @@
                 </span>
               <div class="select">
                 <select name="slct" id="slct">
-                  <option selected disabled>Choose an option</option>
+                  <option selected disabled>{{ $t('panel.Choose_language') }}</option>
                   <option value="1">Pure CSS</option>
                   <option value="2">No JS</option>
                 </select>
@@ -41,9 +41,7 @@ h1 {
     padding-bottom: 25px;
 }
 p{
-   font-weight: 500;
-   
-    
+   font-weight: 500;  
 } 
 
 .tagline {
