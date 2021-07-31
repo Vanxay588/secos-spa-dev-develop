@@ -5,7 +5,7 @@
             {{ $t('global.allRightsReserved') }}
             2021-{{ new Date().getFullYear() }} 
             {{ $t('panel.made') }}   
-            {{ $t('panel.site_title') }} 
+            {{ $t('panel.author') }} 
              </small>
         </p>
     </div>
