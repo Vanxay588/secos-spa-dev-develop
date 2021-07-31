@@ -2,7 +2,7 @@
      <div class="about-section" id="aboutUs">
     	<div class="container">
         	<div class="row clearfix">
-                <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                <div class="content-column col-sm-12 col-xs-12">
                 	<div class="inner-column">
                     	<div class="sec-title">
                     		<div class="title" >{{ $t('cruds.aboutUs.title') }}</div>
@@ -16,19 +16,19 @@
                             <center>{{ $t('cruds.aboutUs.content3') }}</center>
                         </div>
                     </div>
-                </div>
-                <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="container">
-                            <div class="image">
-                            <div class="about-image"></div>
-                            <div class="overlay-box">
-                            	<div class="year-box">{{ $t('cruds.aboutUs.structure') }}</div>
+                         <div class="image-column col-sm-12 col-xs-12">
+                            <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="container">
+                                    <div class="image">
+                                    <img src="/images/structure.png" alt="">
+                                    <div class="overlay-box">
+                                        <div class="year-box">{{ $t('cruds.aboutUs.structure') }}</div>
+                                    </div>
+                                </div>
+                                </div>
+                                
                             </div>
-                        </div>
-                        </div>
-                    	
-                    </div>
+                       </div>
                 </div>
             </div>
         </div>
