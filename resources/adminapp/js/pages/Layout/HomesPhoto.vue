@@ -159,3 +159,18 @@ select {
 }
 
 </style>
+<script>
+  import { mapGetters, mapActions } from 'vuex'
+
+  export default {
+    data() {
+      return {}
+    },
+    computed: {
+      ...mapGetters('I18NStore', ['locale', 'languages'])
+    },
+    methods: {
+      ...mapActions('I18NStore', ['setLocale'])
+    }
+  }
+</script>
