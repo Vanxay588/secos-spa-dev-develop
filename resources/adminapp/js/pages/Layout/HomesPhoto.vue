@@ -2,14 +2,14 @@
     <div class="home-image" id="homes">
         <div class="home-text">
           <h1>{{ $t('panel.welcome') }}&nbsp;&nbsp;&nbsp;{{ $t('panel.site_title') }}</h1>
-                <p class="tagline">
-					<span class="change-container">
-						<span class="changing">get what you want</span>
-						<span class="changing">how you want it</span>
-						<span class="changing">when you want it</span>
-					</span>
-				</p>
-                <span>
+            <p class="tagline">
+              <span class="change-container">
+                <span class="changing">get what you want</span>
+                <span class="changing">how you want it</span>
+                <span class="changing">when you want it</span>
+              </span>
+            </p>
+            <span>
                     <a href="/login"
                     class="btn btn-primary btn-round">
                     <i class="material-icons">login</i> &nbsp;
@@ -23,6 +23,13 @@
                     {{ $t('global.register') }}
                     </a> 
                 </span>
+              <div class="select">
+                <select name="slct" id="slct">
+                  <option selected disabled>Choose an option</option>
+                  <option value="1">Pure CSS</option>
+                  <option value="2">No JS</option>
+                </select>
+              </div> 
         </div>
     </div>
 </template>
@@ -97,4 +104,58 @@ p{
   }
   
 }
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 18em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  margin-top:  20px ;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
 </style>
