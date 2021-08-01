@@ -1,5 +1,6 @@
 <template>
-    <div class="home-image" id="homes">
+  <div class="container" id="homes">
+    <div class="home-image" >
         <div class="home-text">
           <h1>{{ $t('panel.welcome') }}&nbsp;&nbsp;{{ $t('panel.site_title') }}</h1>
             <p class="tagline">
@@ -9,7 +10,7 @@
                 <span class="changing">{{ $t('panel.slogan3') }}</span>
               </span>
             </p>
-            <span>
+                <span>
                     <a href="/login"
                     class="btn btn-primary btn-round">
                     <i class="material-icons">login</i> &nbsp;
@@ -32,6 +33,7 @@
               </div> 
         </div>
     </div>
+  </div>
 </template>
 <style>
 h1 {
