@@ -9,7 +9,7 @@
        </a>
       </div>
       <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#"></a></div>
+        <div class="nav-mobile"><strong><a id="nav-toggle" href="#!"><i class="fa fa-bars" aria-hidden="true" style="color:lightseagreen"></i></a></strong></div>
         <ul class="nav-list">
           <li>
             <a href="#homes">{{ $t('cruds.home.title') }}</a>
@@ -95,12 +95,12 @@
           display: initial;
           padding: 0.9375rem;
           line-height: $nav-height;
-          background: $nav-background;
+         
           color: $nav-font-color;
           text-decoration: none;
           font-weight: 500;
           font-size: 14px;
-              border-radius: 3px;
+          border-radius: 3px;
           &:hover {
             color: $link-hover-color;
           }
@@ -148,13 +148,20 @@
     nav {
     width: 100%;
       padding: $nav-height 0 15px;
+          text-align: center;
+          background: ghostwhite;
       ul {
         display: none;
+       
         li {
           float: none;
+          margin-bottom: 20px;
           a {
             padding: 15px;
             line-height: 20px;
+            &:hover {
+            color: $link-hover-color;
+          }
           }
           ul li a {
             padding-left: 30px;
