@@ -4,20 +4,16 @@
                 <select name="slct" id="slct">
                   <option selected disabled>{{ $t('panel.Choose_language') }}</option>
                   <option 
-            
-        
-        @click.prevent="setLocale(language.short_code)"
-        v-for="language in languages"
-        :key="language.short_code"
-      >
-        {{ language.title }}
-        <i class="pl-1 material-icons" v-show="language.short_code === locale">
-          done
-        </i>
-    
+                    @click.prevent="setLocale(language.short_code)"
+                    v-for="language in languages"
+                    :key="language.short_code"
+                  >
+                    {{ language.title }}
+                    <i class="pl-1 material-icons" v-show="language.short_code === locale">
+                      done
+                    </i>
               </option>
-                  
-                </select>
+          </select>
           </div> 
         <li class="nav-item dropdown">
             <a
