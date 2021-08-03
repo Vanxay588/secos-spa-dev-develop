@@ -1,14 +1,12 @@
 <template>
       <div class="select">
-                <select name="slct" id="slct" v-model="selected" @change="setLocale(selected)">
+               <select name="slct" id="slct" v-model="selected" @change="setLocale(selected)">
                   <option selected disabled>{{ $t('panel.Choose_language') }}</option>
-                  <option v-for="language in languages" :value="language.short_code" :key="language.short_code">
+                  <option v-for="language in languages" :value="language.short_code" :key="language.short_code" :selected="language.short_code === locale ? 'selected':'none'">
                     {{ language.title }}
-                    <i class="pl-1 material-icons" v-show="language.short_code === locale">
-                      done
-                    </i>
                   </option>
-               </select>
+                </select>
+
        </div> 
 </template>
 <style scoped>
@@ -82,6 +80,11 @@ select {
     },
     methods: {
       ...mapActions('I18NStore', ['setLocale'])
+    },
+      mounted(){
+      setTimeout(() => {
+        this.selected = this.locale
+      }, 1000)
     }
   }
 </script>
