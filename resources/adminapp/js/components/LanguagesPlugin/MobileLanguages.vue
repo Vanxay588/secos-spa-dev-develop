@@ -1,52 +1,15 @@
 <template>
-     <div>
-          <div class="select">
-                <select name="slct" id="slct">
+      <div class="select">
+                <select name="slct" id="slct" v-model="selected" @change="setLocale(selected)">
                   <option selected disabled>{{ $t('panel.Choose_language') }}</option>
-                  <option 
-                    @click.prevent="setLocale(language.short_code)"
-                    v-for="language in languages"
-                    :key="language.short_code"
-                  >
+                  <option v-for="language in languages" :value="language.short_code" :key="language.short_code">
                     {{ language.title }}
                     <i class="pl-1 material-icons" v-show="language.short_code === locale">
                       done
                     </i>
-              </option>
-          </select>
-          </div> 
-        <li class="nav-item dropdown">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownLanguage"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="material-icons">language</i>
-              <div class="fixed-width">{{ locale }}</div>
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right"
-              aria-labelledby="navbarDropdownLanguage"
-            >
-              <a
-                class="dropdown-item"
-                href="#"
-                @click.prevent="setLocale(language.short_code)"
-                v-for="language in languages"
-                :key="language.short_code"
-              >
-                {{ language.title }}
-                <i class="pl-1 material-icons" v-show="language.short_code === locale">
-                  done
-                </i>
-              </a>
-            </div>
-          </li>
-     </div>
-              
+                  </option>
+               </select>
+       </div> 
 </template>
 <style scoped>
     
@@ -110,7 +73,9 @@ select {
 
   export default {
     data() {
-      return {}
+      return { 
+        selected:""
+      }
     },
     computed: {
       ...mapGetters('I18NStore', ['locale', 'languages'])
