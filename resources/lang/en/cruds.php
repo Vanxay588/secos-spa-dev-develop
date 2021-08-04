@@ -190,8 +190,8 @@ return [
         ],
     ],
     'blog' => [
-        'title'          => 'Blog',
-        'title_singular' => 'Blog',
+        'title'          => 'News',
+        'title_singular' => 'News',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',

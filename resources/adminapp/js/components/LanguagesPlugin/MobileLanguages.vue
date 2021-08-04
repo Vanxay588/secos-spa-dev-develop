@@ -1,6 +1,6 @@
 <template>
       <div class="select">
-               <select name="slct" id="slct" v-model="selected" @change="setLocale(selected)">
+               <select v-model="selected" @change="setLocale(selected)">
                   <option selected disabled>{{ $t('panel.Choose_language') }}</option>
                   <option v-for="language in languages" :value="language.short_code" :key="language.short_code" :selected="language.short_code === locale ? 'selected':'none'">
                     {{ language.title }}
@@ -68,9 +68,9 @@ select {
 
 <script>
   import { mapGetters, mapActions } from 'vuex'
-
   export default {
-    data() {
+    data() 
+    {
       return { 
         selected:""
       }
@@ -80,11 +80,6 @@ select {
     },
     methods: {
       ...mapActions('I18NStore', ['setLocale'])
-    },
-      mounted(){
-      setTimeout(() => {
-        this.selected = this.locale
-      }, 1000)
     }
   }
 </script>

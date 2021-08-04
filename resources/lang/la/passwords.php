@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'password' => 'Passwords must be at least six characters and match the confirmation.',
-    'reset'    => 'Your password has been reset!',
-    'sent'     => 'We have e-mailed your password reset link!',
-    'token'    => 'This password reset token is invalid.',
-    'user'     => 'We can\'t find a user with that e-mail address.',
-    'updated'  => 'Your password has been changed!',
+    'password' => 'ລະຫັດຜ່ານຕ້ອງມີຢ່າງໜ້ອຍ 6 ຕົວອັກສອນ ແລະ ກົງກັບການຢືນຢັນ.',
+    'reset'    => 'ລະຫັດຜ່ານຂອງທ່ານໄດ້ຖືກຣີເຊັດ!',
+    'sent'     => 'ພວກເຮົາໄດ້ສົ່ງລິງຄ໌ອີເມລ ຣິເຊັດລະຫັດຜ່ານຂອງທ່ານແລ້ວ',
+    'token'    => 'ໂທເຄນ ການຣີເຊັດລະຫັດຜ່ານນີ້ບໍ່ຖືກຕ້ອງ',
+    'user'     => 'ພວກເຮົາບໍ່ສາມາດຊອກຫາຜູ້ໃຊ້ທີ່ມີທີ່ຢູ່ອີເມວນັ້ນ.',
+    'updated'  => 'ລະຫັດຜ່ານຂອງທ່ານໄດ້ຖືກປ່ຽນ!',
 ];
