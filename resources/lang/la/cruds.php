@@ -179,7 +179,7 @@ return [
             'name_helper'       => ' ',
             'categories'        => 'ປະເພດ',
             'categories_helper' => ' ',
-            'photo'             => 'ຮູບ',
+            'photo'             => 'ຮູບພາບ',
             'photo_helper'      => ' ',
             'created_at'        => 'ສ້າງເມື່ອ',
             'created_at_helper' => ' ',
@@ -231,7 +231,7 @@ return [
         'title_singular'             => 'ຕິດຕໍ່ພວກເຮົາ',
         'full_location'              => 'ວັດໄຊຍະພູມມາຣາມ, ນະຄອນໄກສອນພົມວິຫານ, ແຂວງສະຫວັນນະເຂດ',
         'office_location'            =>  'ທີ່ຕັ້ງຂອງໜ່ວຍງານ',
-        'phone'                      =>  '02022618243',
+        'phone'                      =>  '02029296649',
    
     ],
 ];

@@ -227,6 +227,6 @@ return [
         'title_singular'             => 'Contact Us',
         'full_location'              => 'Xayyaphoummaram Temple, Kaysone Phomvihane Capital, Savannakhet Province',
         'office_location'            =>  'Office location',
-        'phone'                      =>  '02022618243',
+        'phone'                      =>  '02029296649',
     ],
 ];
