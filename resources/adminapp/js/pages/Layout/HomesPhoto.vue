@@ -12,14 +12,14 @@
                 <span class="changing">{{ $t('panel.slogan3') }}</span>
               </span>
             </p>
-                <span style="padding:10px">
+                <span>
                     <a href="/login"
                     class="btn btn-primary btn-round">
                     <i class="material-icons">login</i>&nbsp;
                     {{ $t('global.login') }}
                     </a> 
                 </span>
-                <span style="padding:10px">
+                <span style="padding-left:10px">
                     <a href="/register"
                     class="btn btn-primary btn-round">
                     <i class="material-icons">app_registration</i>&nbsp;
