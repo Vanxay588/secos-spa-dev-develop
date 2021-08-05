@@ -1,8 +1,9 @@
 <template>
       <div class="select">
                <select v-model="selected" @change="setLocale(selected)">
-                  <option selected disabled>{{ $t('panel.Choose_language') }}</option>
-                  <option v-for="language in languages" :value="language.short_code" :key="language.short_code" :selected="language.short_code === locale ? 'selected':'none'">
+                  <option selected disabled value="" >{{ $t('panel.Choose_language') }}</option>
+                  <option v-for="language in languages" :value="language.short_code" :key="language.short_code" 
+                  :selected="language.short_code === locale ? 'selected':'none'">
                     {{ language.title }}
                   </option>
                 </select>
