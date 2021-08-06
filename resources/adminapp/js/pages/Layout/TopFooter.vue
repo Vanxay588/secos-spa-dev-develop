@@ -5,9 +5,9 @@
           <li >
             <a href="#homes">{{ $t('cruds.home.title') }}</a>
           </li>
-          <li >
+          <!-- <li >
             <a href="#blog">{{ $t('cruds.blog.title') }}</a>
-          </li>
+          </li> -->
           <li >
             <a  href="#annoucements">{{ $t('cruds.annoucement.title') }}</a>
           </li>

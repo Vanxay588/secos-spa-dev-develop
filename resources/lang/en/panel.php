@@ -6,8 +6,8 @@ return [
     'made'                       => 'Made With',
     'short_location'             => 'Xayyaphoummaram Temple',
     'author'                     => 'Vanxay XAYYAPHONE',
-    'slogan1'                    => 'Get what you want',
-    'slogan2'                    => 'How you want it',
-    'slogan3'                    => 'slogan',
+    'slogan1'                    => 'ປັນຍາສຶກສາ',
+    'slogan2'                    => 'ຄຸນສົມບັດສຶກສາ',
+    'slogan3'                    => 'ແຮງງານສຶກສາ',
     'Choose_language'            => 'Choose language...'
 ];

@@ -6,8 +6,8 @@ return [
     'made'                       => 'ສ້າງໂດຍ',
     'short_location'             => 'ວັດໄຊຍະພູມມາຣາມ',
     'author'                     => 'ວັນໄຊ ໄຊຍະພອນ',
-    'slogan1'                    => 'Get what you want',
-    'slogan2'                    => 'How you want it',
-    'slogan3'                    => 'slogan',
+    'slogan1'                    => 'ປັນຍາສຶກສາ',
+    'slogan2'                    => 'ຄຸນສົມບັດສຶກສາ',
+    'slogan3'                    => 'ແຮງງານສຶກສາ',
     'Choose_language'            => 'ເລືອກພາສາ...'
 ];
