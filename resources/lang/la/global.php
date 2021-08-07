@@ -5,7 +5,7 @@ return [
     'add'                            => 'ເພິ່ມ',
     'allRightsReserved'              => 'ລິຂະສິດ.',
     'areYouSure'                     => 'ທ່ານແນ່ໃຈບໍ?',
-    'You_won'                        => 'ທ່ານຈະບໍ່ສາມາດກັບຄືນນີ້ໄດ້!',
+    'you_won'                        => 'ທ່ານຈະບໍ່ສາມາດກັບຄືນນີ້ໄດ້!',
     'clickHereToVerify'              => 'ກົດທີ່ນີ້ເພື່ອຢືນຢັນ',
     'create'                         => 'ສ້າງ',
     'dashboard'                      => 'ກະດານຫຼັກ',
@@ -310,4 +310,6 @@ return [
     'team-members'                   => 'ສະມາຊິກທີມ',
     'calendar'                       => 'ປະຕິທິນ',
     'messenger'                      => 'ຜູ້ສົ່ງຂ່າວ',
+    'or'                             => 'ຫຼື',
+    'surname'                        => 'ນາມສະກຸນ',
 ];

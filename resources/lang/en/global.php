@@ -5,7 +5,7 @@ return [
     'add'                            => 'Add',
     'allRightsReserved'              => 'All rights reserved.',
     'areYouSure'                     => 'Are you sure?',
-    'You_won'                        =>'You won\'t be able to revert this!',
+    'you_won'                        => 'You won\'t be able to revert this!',
     'clickHereToVerify'              => 'Click here to verify',
     'create'                         => 'Create',
     'dashboard'                      => 'Dashboard',
@@ -310,4 +310,6 @@ return [
     'team-members'                   => 'Team members',
     'calendar'                       => 'Calendar',
     'messenger'                      => 'Messenger',
+    'or'                             => 'ຫຼື',
+    'surname'                        => 'ນາມສະກຸນ',
 ];

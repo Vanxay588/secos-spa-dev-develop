@@ -43,7 +43,7 @@ export default {
     destroyData(id) {
       this.$swal({
         title: this.$i18n.t('global.areYouSure'),
-        text: this.$i18n.t("global.You_won"),
+        text: this.$i18n.t("global.you_won"),
         type: 'warning',
         showCancelButton: true,
         cancelButtonText: this.$i18n.t("global.cancel"),
