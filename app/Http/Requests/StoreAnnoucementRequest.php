@@ -30,7 +30,7 @@ class StoreAnnoucementRequest extends FormRequest
                 'required',
             ],
             'number' => [
-                'integer',
+                'numeric',
                 'min:-2147483648',
                 'max:2147483647',
                 'required',

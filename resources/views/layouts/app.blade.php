@@ -36,10 +36,8 @@
 
 <body class="off-canvas-sidebar">
     @yield('content')
-    <script>
-    window.default_locale = "{{ config('app.lang') }}";
-    window.fallback_locale = "{{ config('app.fallback_locale') }}";
-
+<script>
+    window.default_locale = app()->getLocale();
 </script>
 </body>
 
