@@ -313,5 +313,5 @@ return [
     'or'                             => 'ຫຼື',
     'surname'                        => 'ນາມສະກຸນ',
     'date_of_birth'                  => 'Date of birth',
-    'Please_confirm'                 =>' Please confirm your password before continuing'
+    'please_confirm'                 =>' Please confirm your password before continuing',
 ];

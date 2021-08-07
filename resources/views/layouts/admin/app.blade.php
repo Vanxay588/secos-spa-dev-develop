@@ -102,11 +102,6 @@
         $('html, body').animate({scrollTop:0}, '300');
         });
     </script>
-    
-    <script>
-        window.default_locale = app()->getLocale();
-    </script>
-
 </body>
 
 </html>

@@ -36,9 +36,6 @@
 
 <body class="off-canvas-sidebar">
     @yield('content')
-<script>
-    window.default_locale = app()->getLocale();
-</script>
 </body>
 
 </html>

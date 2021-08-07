@@ -48,7 +48,7 @@
                 @csrf
 
                 <div class="input-group">
-                    <input id="password" type="password" name="password" class="form-control" placeholder="{{ trans ('Confirm Password') }}" required>
+                    <input id="password" type="password" name="password" class="form-control" placeholder="  {{ trans('global.login_password_confirmation') }}}" required>
 
                     <div class="input-group-btn">
                         <button type="submit" class="btn">
@@ -66,7 +66,7 @@
         @enderror
 
         <div class="help-block text-center">
-            {{ trans ('global.Please_confirm_your_password_before_continuing.') }}
+            {{ trans ('global.please_confirm.') }}
         </div>
 
         <div class="text-center">

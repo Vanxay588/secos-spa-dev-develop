@@ -53,6 +53,7 @@
                                                 </div>
                                             @enderror
                                         </div>
+            
                                         {{-- date of birth --}}
                                         <div class="form-group bmd-form-group">
                                             <div class="input-group">
