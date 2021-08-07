@@ -5,6 +5,7 @@ return [
     'add'                            => 'Add',
     'allRightsReserved'              => 'All rights reserved.',
     'areYouSure'                     => 'Are you sure?',
+    'You_won'                        =>'You won\'t be able to revert this!',
     'clickHereToVerify'              => 'Click here to verify',
     'create'                         => 'Create',
     'dashboard'                      => 'Dashboard',

@@ -12,20 +12,14 @@ class UsersTableSeeder extends Seeder
         $users = [
             [
                 'id'             => 1,
-                'name'           => 'Vanxay',
+                'name'           => 'ວັນໄຊ',
+                'surname'        => 'ໄຊຍະພອນ',
+                'gender'         => 'ຊາຍ',
                 'email'          => 'Vanxay588@gmail.com',
                 'password'       => bcrypt('NQ17401061'),
                 'remember_token' => null,
-                'surname'        => '',
-            ],
-            [
-                'id'             => 2,
-                'name'           => 'Admin',
-                'email'          => 'Inthapunya@gmail.com',
-                'password'       => bcrypt('9G@/?w_#B2q8seH'),
-                'remember_token' => null,
-                'surname'        => '',
-            ],
+              
+            ]
         ];
 
         User::insert($users);

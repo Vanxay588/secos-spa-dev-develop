@@ -42,11 +42,12 @@ export default {
   methods: {
     destroyData(id) {
       this.$swal({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
+        title: this.$i18n.t('global.areYouSure'),
+        text: this.$i18n.t("global.You_won"),
         type: 'warning',
         showCancelButton: true,
-        confirmButtonText: 'Delete',
+        cancelButtonText: this.$i18n.t("global.cancel"),
+        confirmButtonText: this.$i18n.t("global.delete"),
         confirmButtonColor: '#dd4b39',
         focusCancel: true,
         reverseButtons: true
