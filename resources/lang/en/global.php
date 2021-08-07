@@ -312,4 +312,6 @@ return [
     'messenger'                      => 'Messenger',
     'or'                             => 'ຫຼື',
     'surname'                        => 'ນາມສະກຸນ',
+    'date_of_birth'                  => 'Date of birth',
+    'Please_confirm'                 =>' Please confirm your password before continuing'
 ];
