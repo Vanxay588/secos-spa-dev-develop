@@ -3711,7 +3711,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
   }
   
@@ -12626,6 +12626,8 @@
   .bmd-form-group .radio label,
   .bmd-form-group label {
     font-size: 0.875rem;
+    padding-inline-end: 20px;
+    margin-left:  10px;
   }
   
   .bmd-form-group .bmd-label-floating,

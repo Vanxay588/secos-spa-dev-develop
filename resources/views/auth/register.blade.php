@@ -53,7 +53,25 @@
                                                 </div>
                                             @enderror
                                         </div>
-            
+                                        {{-- Gender --}}
+                                        <div class="form-group bmd-form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">male</i>
+                                                    </span>
+                                                </div>
+                                                @foreach(App\Models\User::GENDER_RADIO as $key => $label)
+                                                    <input class="form-group bmd-form-group"  placeholder="{{ trans ('global.gender') }}..." type="radio" id="gender {{ $key }}" name="gender" value="{{ $key }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required autocomplete="name" autofocus>
+                                                    <label class="form-check-label" for="gender {{ $key }}">{{ $label['label'] }}</label>
+                                                 @endforeach
+                                            </div>
+                                            @error('gender')
+                                                <div class="error" for="gender">
+                                                    {{ $message }}
+                                                </div>
+                                            @enderror
+                                        </div>
                                         {{-- date of birth --}}
                                         <div class="form-group bmd-form-group">
                                             <div class="input-group">
@@ -62,7 +80,7 @@
                                                         <i class="material-icons">event</i>
                                                     </span>
                                                 </div>
-                                                <input name="date_of_birth" type="date" class="form-control" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth') }}" required autocomplete="name" autofocus>
+                                                <input name="date_of_birth" type="date" class="form-control" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth' }} " required autocomplete="name" autofocus>
                                             </div>
                                             @error('date_of_birth')
                                                 <div class="error" for="date_of_birth">
