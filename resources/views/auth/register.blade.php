@@ -72,7 +72,7 @@
                                                 </div>
                                             @enderror
                                         </div>
-                                        {{-- date of birth --}}
+                                        {{-- date_of_birth --}}
                                         <div class="form-group bmd-form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -80,7 +80,7 @@
                                                         <i class="material-icons">event</i>
                                                     </span>
                                                 </div>
-                                                <input name="date_of_birth" type="date" class="form-control" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth' }} " required autocomplete="name" autofocus>
+                                                <input name="date_of_birth" type="date" class="form-control" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth') }}" required autocomplete="name">
                                             </div>
                                             @error('date_of_birth')
                                                 <div class="error" for="date_of_birth">
@@ -88,7 +88,7 @@
                                                 </div>
                                             @enderror
                                         </div>
-                                        {{-- Email --}}
+                                     {{-- Email --}}
                                         <div class="form-group bmd-form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
