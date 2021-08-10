@@ -1366,16 +1366,16 @@
         },
         {
             "name": "laravel/dusk",
-            "version": "v6.16.0",
+            "version": "v6.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/dusk.git",
-                "reference": "2bc1035170f0a119521f9e09b82bba4889ee67b0"
+                "reference": "8563c4e853c32649919b09a6568cdf914284c129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/2bc1035170f0a119521f9e09b82bba4889ee67b0",
-                "reference": "2bc1035170f0a119521f9e09b82bba4889ee67b0",
+                "url": "https://api.github.com/repos/laravel/dusk/zipball/8563c4e853c32649919b09a6568cdf914284c129",
+                "reference": "8563c4e853c32649919b09a6568cdf914284c129",
                 "shasum": ""
             },
             "require": {
@@ -1433,22 +1433,22 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/dusk/issues",
-                "source": "https://github.com/laravel/dusk/tree/v6.16.0"
+                "source": "https://github.com/laravel/dusk/tree/v6.17.0"
             },
-            "time": "2021-08-03T15:21:19+00:00"
+            "time": "2021-08-10T17:13:15+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v8.53.1",
+            "version": "v8.54.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5df423c2790f32b26baee90518bb659572aa404f"
+                "reference": "7b88554cd1aeb52b7f82689bf244182e7a81894b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5df423c2790f32b26baee90518bb659572aa404f",
-                "reference": "5df423c2790f32b26baee90518bb659572aa404f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7b88554cd1aeb52b7f82689bf244182e7a81894b",
+                "reference": "7b88554cd1aeb52b7f82689bf244182e7a81894b",
                 "shasum": ""
             },
             "require": {
@@ -1603,7 +1603,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-08-05T14:04:08+00:00"
+            "time": "2021-08-10T14:25:51+00:00"
         },
         {
             "name": "laravel/sanctum",
