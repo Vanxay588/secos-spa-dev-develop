@@ -34,7 +34,7 @@
   <style>
   h1 {
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 800;
       color: ghostwhite;
       padding-bottom: 25px;
   }
