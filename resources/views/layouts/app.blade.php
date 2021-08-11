@@ -32,10 +32,57 @@
     <link rel="stylesheet" href="{{ mix('/adminapp/css/app.css') }}">
     <link rel="stylesheet" href="{{ url('/md/css/material-dashboard.css') }}">
     <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
 </head>
 
 <body class="off-canvas-sidebar">
     @yield('content')
+
+<script>
+    $(document).ready(function () {
+    moment.updateLocale('en', {
+      week: {dow: 1} // Monday is the first day of the week
+    })
+
+    $('.date').datetimepicker({
+      format: 'DD/MM/YYYY',
+      locale: 'en',
+      icons: {
+        up: 'fas fa-chevron-up',
+        down: 'fas fa-chevron-down',
+        previous: 'fas fa-chevron-left',
+        next: 'fas fa-chevron-right'
+      }
+    })
+
+    $('.datetime').datetimepicker({
+      format: 'DD/MM/YYYY HH:mm:ss',
+      locale: 'en',
+      sideBySide: true,
+      icons: {
+        up: 'fas fa-chevron-up',
+        down: 'fas fa-chevron-down',
+        previous: 'fas fa-chevron-left',
+        next: 'fas fa-chevron-right'
+      }
+    })
+
+    $('.timepicker').datetimepicker({
+      format: 'HH:mm:ss',
+      icons: {
+        up: 'fas fa-chevron-up',
+        down: 'fas fa-chevron-down',
+        previous: 'fas fa-chevron-left',
+        next: 'fas fa-chevron-right'
+      }
+    })
+  })
+    </script>
+   
 </body>
 
 </html>
