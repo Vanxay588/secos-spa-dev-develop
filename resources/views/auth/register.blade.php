@@ -63,7 +63,7 @@
                                                 </div>
                                                 @foreach(App\Models\User::GENDER_RADIO as $key => $label)
                                                 <div class="form-control">
-                                                        <input class="form-check-input" type="radio" name="gender"  placeholder="{{ trans ('global.gender') }}..." value="{{ $label['label'] }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required>
+                                                        <input class="form-check-input" type="radio" name="gender"  placeholder="{{ trans ('global.gender') }}..." value="{{ $label['label'] }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required style="position: initial; padding-left: 20px; display: inline-block;">
                                                         <label class="form-check-label" for="gender {{ $key }}">{{ $label['label'] }}</label>
                                                  </div>
                                                  @endforeach

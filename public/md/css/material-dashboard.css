@@ -12626,8 +12626,7 @@
   .bmd-form-group .radio label,
   .bmd-form-group label {
     font-size: 0.875rem;
-    padding-inline-end: 20px;
-    padding-left:  20px;
+    padding:  0px;
   }
   
   .bmd-form-group .bmd-label-floating,
