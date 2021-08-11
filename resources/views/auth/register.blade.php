@@ -80,7 +80,7 @@
                                                         <i class="material-icons">event</i>
                                                     </span>
                                                 </div>
-                                                <input name="text" type="text" class="form-control date" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth') }}" required>
+                                                <input name="date_of_birth" type="text" class="form-control date" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth') }}" required>
                                             </div>
                                             @error('date_of_birth')
                                                 <div class="error" for="date_of_birth">
