@@ -62,7 +62,7 @@
                                                     </span>
                                                 </div>
                                                 @foreach(App\Models\User::GENDER_RADIO as $key => $label)
-                                                    <input class="form-group bmd-form-group"  placeholder="{{ trans ('global.gender') }}..." type="radio" id="gender {{ $key }}" name="gender" value="{{ $key }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required autocomplete="name" autofocus>
+                                                    <input class="form-group bmd-form-group"  placeholder="{{ trans ('global.gender') }}..." type="radio" id="gender {{ $key }}" name="gender" value="{{ $key }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required>
                                                     <label class="form-check-label" for="gender {{ $key }}">{{ $label['label'] }}</label>
                                                  @endforeach
                                             </div>
@@ -80,7 +80,7 @@
                                                         <i class="material-icons">event</i>
                                                     </span>
                                                 </div>
-                                                <input name="date_of_birth" type="text" class="form-control date" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth') }}" required>
+                                                <input name="date_of_birth" type="text" class="form-control date" placeholder="{{ trans ('global.date_of_birth') }}..." value="{{ old('date_of_birth') }}" required  autocomplete="date_of_birth">
                                             </div>
                                             @error('date_of_birth')
                                                 <div class="error" for="date_of_birth">
