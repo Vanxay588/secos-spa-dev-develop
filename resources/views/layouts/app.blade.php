@@ -32,16 +32,19 @@
     <link rel="stylesheet" href="{{ mix('/adminapp/css/app.css') }}">
     <link rel="stylesheet" href="{{ url('/md/css/material-dashboard.css') }}">
     <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha512-f0tzWhCwVFS3WeYaofoLWkTP62ObhewQ1EZn65oSYDZUg1+CyywGKkWzm8BxaJj5HGKI72PnMH9jYyIFz+GH7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
 </head>
 
 <body class="off-canvas-sidebar">
     @yield('content')
-
+    
 <script>
     $(document).ready(function () {
     moment.updateLocale('en', {
@@ -49,8 +52,9 @@
     })
 
     $('.date').datetimepicker({
-      format: 'DD/MM/YYYY',
+      format: 'd/m/Y',
       locale: 'en',
+      timepicker:false,
       icons: {
         up: 'fas fa-chevron-up',
         down: 'fas fa-chevron-down',
