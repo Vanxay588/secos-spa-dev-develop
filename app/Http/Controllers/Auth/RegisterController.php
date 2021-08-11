@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Gate;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
@@ -52,7 +53,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name'                  => ['required', 'string', 'max:255'],
             'surname'               => ['required', 'string', 'max:255'],
-            'gender'                => ['required','in:' . implode(',', Arr::pluck(User::GENDER_RADIO, 'value'))],
+            'gender'                => ['required', 'in:' . implode(',', Arr::pluck(User::GENDER_RADIO, 'value')),],
             'date_of_birth'         => ['required', 'date_format:' . config('project.date_format')],
             'email'                 => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password'              => ['required', 'string', 'min:8', 'confirmed'],
@@ -73,6 +74,8 @@ class RegisterController extends Controller
             'date_of_birth'     => $data['date_of_birth'],
             'email'             => $data['email'],
             'password'          => Hash::make($data['password']),
+            
         ]);
+      
     }
 }

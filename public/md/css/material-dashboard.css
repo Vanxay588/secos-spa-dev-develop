@@ -2329,8 +2329,8 @@
   
   .form-check-input {
     position: absolute;
-    margin-top: 0.3rem;
-    margin-left: -1.25rem;
+    margin-top: 0.1rem;
+    margin-left: -.25rem;
   }
   
   .form-check-input:disabled~.form-check-label {
@@ -12627,7 +12627,7 @@
   .bmd-form-group label {
     font-size: 0.875rem;
     padding-inline-end: 20px;
-    margin-left:  10px;
+    padding-left:  20px;
   }
   
   .bmd-form-group .bmd-label-floating,

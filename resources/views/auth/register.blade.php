@@ -53,7 +53,7 @@
                                                 </div>
                                             @enderror
                                         </div>
-                                        {{-- Gender --}}
+                                        {{-- gender --}}
                                         <div class="form-group bmd-form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -62,8 +62,10 @@
                                                     </span>
                                                 </div>
                                                 @foreach(App\Models\User::GENDER_RADIO as $key => $label)
-                                                    <input class="form-group bmd-form-group"  placeholder="{{ trans ('global.gender') }}..." type="radio" id="gender {{ $key }}" name="gender" value="{{ $key }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required>
-                                                    <label class="form-check-label" for="gender {{ $key }}">{{ $label['label'] }}</label>
+                                                <div class="form-control">
+                                                        <input class="form-check-input" type="radio" name="gender"  placeholder="{{ trans ('global.gender') }}..." value="{{ $label['label'] }}" {{ old('gender', '') === (string) $key ? 'checked' : '' }} required>
+                                                        <label class="form-check-label" for="gender {{ $key }}">{{ $label['label'] }}</label>
+                                                 </div>
                                                  @endforeach
                                             </div>
                                             @error('gender')
