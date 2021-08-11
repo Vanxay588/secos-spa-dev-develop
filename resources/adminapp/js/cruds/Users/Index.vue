@@ -122,12 +122,6 @@ export default {
           sortable: true
         },
         {
-          title: 'cruds.user.fields.email_verified_at',
-          field: 'email_verified_at',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
           title: 'cruds.user.fields.roles',
           field: 'roles.title',
           thComp: TranslatedHeader,

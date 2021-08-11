@@ -8,6 +8,9 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Arr;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Response;
 
 class RegisterController extends Controller
 {
@@ -49,8 +52,8 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name'                  => ['required', 'string', 'max:255'],
             'surname'               => ['required', 'string', 'max:255'],
-            'gender'                => ['required', 'string', 'max:255'],
-            'date_of_birth'         => ['required', 'date'],
+            'gender'                => ['required','in:' . implode(',', Arr::pluck(User::GENDER_RADIO, 'value'))],
+            'date_of_birth'         => ['required', 'date_format:' . config('project.date_format')],
             'email'                 => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password'              => ['required', 'string', 'min:8', 'confirmed'],
         ]);

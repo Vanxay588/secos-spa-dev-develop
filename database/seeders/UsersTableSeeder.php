@@ -15,6 +15,7 @@ class UsersTableSeeder extends Seeder
                 'name'           => 'ວັນໄຊ',
                 'surname'        => 'ໄຊຍະພອນ',
                 'gender'         => 'ຊາຍ',
+                'date_of_birth'  => '1998-02-15',
                 'email'          => 'Vanxay588@gmail.com',
                 'password'       => bcrypt('NQ17401061'),
                 'remember_token' => null,
