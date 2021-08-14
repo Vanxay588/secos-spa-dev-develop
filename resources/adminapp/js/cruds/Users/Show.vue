@@ -72,14 +72,6 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.user.fields.email_verified_at') }}
-                        </td>
-                        <td>
-                          {{ entry.email_verified_at }}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-primary">
                           {{ $t('cruds.user.fields.roles') }}
                         </td>
                         <td>
