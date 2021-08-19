@@ -9,7 +9,7 @@
                         @csrf
                         <div class="card card-signup">
                             <div class="card-header card-header-primary text-center">
-                                <h4 class="card-title">{{ trans ('global.register') }}</h4>
+                                <h5 class="card-title">{{ trans ('global.register') }}</h5>
                             </div>
                             @if(session('status'))
                                 <div class="card-body" style="padding: .9375rem 20px;">

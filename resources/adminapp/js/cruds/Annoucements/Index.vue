@@ -7,10 +7,10 @@
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
-            <h4 class="card-title">
+            <h5 class="card-title">
               {{ $t('global.table') }}
               <strong>{{ $t('cruds.annoucement.title') }}</strong>
-            </h4>
+            </h5>
           </div>
           <div class="card-body">
             <router-link

@@ -10,7 +10,7 @@
                         <input type="hidden" name="token" value="{{ $token }}">
                         <div class="card card-login">
                             <div class="card-header card-header-primary text-center">
-                                <h4 class="card-title">{{ trans('global.reset_password') }}</h4>
+                                <h5 class="card-title">{{ trans('global.reset_password') }}</h5>
                             </div>
 
                             @if(session('status'))

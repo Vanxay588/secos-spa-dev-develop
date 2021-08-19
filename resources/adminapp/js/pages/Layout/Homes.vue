@@ -9,6 +9,8 @@
         <hr>
         <download></download>
         <hr>
+        <ExaminationResults></ExaminationResults>
+        <hr>
         <about-us></about-us>
         <hr>
         <contact></contact>
@@ -23,6 +25,7 @@ import AboutUs from './AboutUs.vue'
 import Contact from './Contact.vue'
 import Annoucements from './Annoucements.vue'
 import Download from './Download.vue'
+import ExaminationResults from './ExaminationResults.vue'
 import ButtomFooter from './ButtomFooter.vue'
 import HomesPhoto from './HomesPhoto.vue'
 import Policies   from  './Policies.vue'
@@ -37,7 +40,8 @@ export default {
       HomesPhoto,
       AboutUs,
       Contact,
-      Navigation
+      Navigation,
+      ExaminationResults
   }
 }
 </script>

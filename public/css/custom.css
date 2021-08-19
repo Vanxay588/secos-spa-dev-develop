@@ -161,19 +161,12 @@
 	display:block;
 }
 
-.about-section .image-column .inner-column .image .overlay-box{
-	position:relative;
-	left:40px;
-	bottom:48px;
-}
-
 .about-section .image-column .inner-column .image .overlay-box .year-box{
-	position:absolute;
 	color:#333333;
 	font-size:16px;
-	font-weight:700;
+	font-weight:300;
 	line-height:1.4em;
-	padding-left:50%;
+	text-align: center;
 }
 
 .about-section .image-column .inner-column .image .overlay-box .year-box .number{
@@ -201,8 +194,8 @@
 .sec-title .title {
     position: relative;
     color: #d7a449;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 300;
     padding-right: 50px;
     margin-bottom: 15px;
     display: contents;

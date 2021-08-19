@@ -9,9 +9,9 @@
                         @csrf
                         <div class="card card-login">
                             <div class="card-header card-header-primary text-center">
-                                <h4 class="card-title">
+                                <h5 class="card-title">
                                     {{ trans('global.reset_password') }}
-                                </h4>
+                                </h5>
                             </div>
 
                             @if(session('status'))

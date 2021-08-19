@@ -9,7 +9,7 @@
             </div>
             <h5 class="card-title">
               {{ $t('global.table') }}
-              <strong>{{ $t('cruds.user.title') }}</strong>
+              <strong>{{ $t('cruds.examinationResult.title') }}</strong>
             </h5>
           </div>
           <div class="card-body">
@@ -72,8 +72,7 @@ import DatatableActions from '@components/Datatables/DatatableActions'
 import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
-import DatatableEnum from '@components/Datatables/DatatableEnum'
-import DatatableList from '@components/Datatables/DatatableList'
+import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 
 export default {
   components: {
@@ -84,48 +83,29 @@ export default {
     return {
       columns: [
         {
-          title: 'cruds.user.fields.id',
+          title: 'cruds.examinationResult.fields.id',
           field: 'id',
           thComp: TranslatedHeader,
           sortable: true,
           colStyle: 'width: 100px;'
         },
         {
-          title: 'cruds.user.fields.name',
+          title: 'cruds.examinationResult.fields.academic_years',
+          field: 'academic_years',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.examinationResult.fields.examination_result',
+          field: 'examination_result',
+          thComp: TranslatedHeader,
+          tdComp: DatatableAttachments
+        },
+        {
+          title: 'cruds.examinationResult.fields.name',
           field: 'name',
           thComp: TranslatedHeader,
           sortable: true
-        },
-        {
-          title: 'cruds.user.fields.surname',
-          field: 'surname',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.user.fields.gender',
-          field: 'gender',
-          thComp: TranslatedHeader,
-          sortable: true,
-          tdComp: DatatableEnum
-        },
-        {
-          title: 'cruds.user.fields.date_of_birth',
-          field: 'date_of_birth',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.user.fields.email',
-          field: 'email',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.user.fields.roles',
-          field: 'roles.title',
-          thComp: TranslatedHeader,
-          tdComp: DatatableList
         },
         {
           title: 'global.actions',
@@ -139,9 +119,9 @@ export default {
       ],
       query: { sort: 'id', order: 'desc', limit: 100, s: '' },
       xprops: {
-        module: 'UsersIndex',
-        route: 'users',
-        permission_prefix: 'user_'
+        module: 'ExaminationResultsIndex',
+        route: 'examination_results',
+        permission_prefix: 'examination_result_'
       }
     }
   },
@@ -149,7 +129,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('UsersIndex', ['data', 'total', 'loading'])
+    ...mapGetters('ExaminationResultsIndex', ['data', 'total', 'loading'])
   },
   watch: {
     query: {
@@ -161,7 +141,11 @@ export default {
     }
   },
   methods: {
-    ...mapActions('UsersIndex', ['fetchIndexData', 'setQuery', 'resetState'])
+    ...mapActions('ExaminationResultsIndex', [
+      'fetchIndexData',
+      'setQuery',
+      'resetState'
+    ])
   }
 }
 </script>

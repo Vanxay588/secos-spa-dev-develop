@@ -7,10 +7,10 @@
             <div class="card-icon">
               <i class="material-icons">remove_red_eye</i>
             </div>
-            <h4 class="card-title">
+            <h5 class="card-title">
               {{ $t('global.view') }}
               <strong>{{ $t('cruds.role.title_singular') }}</strong>
-            </h4>
+            </h5>
           </div>
           <div class="card-body">
             <back-button></back-button>

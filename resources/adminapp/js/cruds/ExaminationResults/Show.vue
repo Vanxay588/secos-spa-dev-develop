@@ -9,7 +9,9 @@
             </div>
             <h5 class="card-title">
               {{ $t('global.view') }}
-              <strong>{{ $t('cruds.download.title_singular') }}</strong>
+              <strong>{{
+                $t('cruds.examinationResult.title_singular')
+              }}</strong>
             </h5>
           </div>
           <div class="card-body">
@@ -23,7 +25,7 @@
                     <tbody>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.download.fields.id') }}
+                          {{ $t('cruds.examinationResult.fields.id') }}
                         </td>
                         <td>
                           {{ entry.id }}
@@ -31,43 +33,36 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.download.fields.download') }}
+                          {{
+                            $t('cruds.examinationResult.fields.academic_years')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.academic_years }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.examinationResult.fields.examination_result'
+                            )
+                          }}
                         </td>
                         <td>
                           <datatable-attachments
                             :row="entry"
-                            :field="'download'"
+                            :field="'examination_result'"
                           >
                           </datatable-attachments>
                         </td>
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.download.fields.name') }}
+                          {{ $t('cruds.examinationResult.fields.name') }}
                         </td>
                         <td>
                           {{ entry.name }}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-primary">
-                          {{ $t('cruds.download.fields.categories') }}
-                        </td>
-                        <td>
-                          <datatable-single
-                            :row="entry"
-                            field="categories.categories"
-                          >
-                          </datatable-single>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-primary">
-                          {{ $t('cruds.download.fields.photo') }}
-                        </td>
-                        <td>
-                          <datatable-pictures :row="entry" :field="'photo'">
-                          </datatable-pictures>
                         </td>
                       </tr>
                     </tbody>
@@ -85,14 +80,10 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
-import DatatableSingle from '@components/Datatables/DatatableSingle'
-import DatatablePictures from '@components/Datatables/DatatablePictures'
 
 export default {
   components: {
-    DatatableAttachments,
-    DatatableSingle,
-    DatatablePictures
+    DatatableAttachments
   },
   data() {
     return {}
@@ -101,7 +92,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('DownloadsSingle', ['entry'])
+    ...mapGetters('ExaminationResultsSingle', ['entry'])
   },
   watch: {
     '$route.params.id': {
@@ -113,7 +104,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('DownloadsSingle', ['fetchShowData', 'resetState'])
+    ...mapActions('ExaminationResultsSingle', ['fetchShowData', 'resetState'])
   }
 }
 </script>

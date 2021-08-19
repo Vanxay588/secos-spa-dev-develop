@@ -5,9 +5,6 @@
           <li >
             <a href="#homes">{{ $t('cruds.home.title') }}</a>
           </li>
-          <!-- <li >
-            <a href="#blog">{{ $t('cruds.blog.title') }}</a>
-          </li> -->
           <li >
             <a  href="#annoucements">{{ $t('cruds.annoucement.title') }}</a>
           </li>
@@ -16,6 +13,9 @@
           </li>
           <li>
             <a href="#download"> {{ $t('cruds.download.title') }}</a>
+          </li>
+             <li>
+            <a href="#examinationResult"> {{ $t('cruds.examinationResult.title') }}</a>
           </li>
           <li >
             <a  href="#aboutUs">{{ $t('cruds.aboutUs.title') }}</a>
@@ -52,7 +52,7 @@
         color: inherit;
         padding: 0.9375rem;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         border-radius: 3px;
         text-decoration: none;
         position: relative;

@@ -4,7 +4,7 @@
       <div class="card-icon">
         <i class="material-icons">{{ chartData.icon }}</i>
       </div>
-      <h4 class="card-title">{{ chartData.title }}</h4>
+      <h5 class="card-title">{{ chartData.title }}</h5>
     </div>
     <div class="card-body">
       <table class="table table-striped table-hover">

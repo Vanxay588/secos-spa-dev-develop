@@ -51,7 +51,6 @@
     <script src="{{ url('/md/js/core/popper.min.js') }} "></script>
     <script src="{{ url('/md/js/core/bootstrap-material-design.min.js') }} "></script>
     <script src="{{ url('/md/js/plugins/perfect-scrollbar.jquery.min.js') }} "></script>
-    <script src="{{ url('/md/js/plugins/bootstrap-notify.js') }} "></script>
 
    <!-- Plugin for the momentJs -->
     <script src="{{ url('/md/js/plugins/moment.min.js') }} "></script>

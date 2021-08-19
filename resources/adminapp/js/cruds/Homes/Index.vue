@@ -7,10 +7,10 @@
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
-            <h4 class="card-title">
+            <h5 class="card-title">
               {{ $t('global.view') }}
               <strong>{{ $t('cruds.home.title') }}</strong>
-            </h4>
+            </h5>
           </div>
           <div class="card-body">
             <div class="row">

@@ -6,11 +6,13 @@
           <div class="card">
             <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
-                <i class="material-icons">add</i>
+                <i class="material-icons">edit</i>
               </div>
               <h5 class="card-title">
-                {{ $t('global.create') }}
-                <strong>{{ $t('cruds.download.title_singular') }}</strong>
+                {{ $t('global.edit') }}
+                <strong>{{
+                  $t('cruds.examinationResult.title_singular')
+                }}</strong>
               </h5>
             </div>
             <div class="card-body">
@@ -20,17 +22,38 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.academic_years,
+                      'is-focused': activeField == 'academic_years'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">{{
+                      $t('cruds.examinationResult.fields.academic_years')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.academic_years"
+                      @input="updateAcademicYears"
+                      @focus="focusField('academic_years')"
+                      @blur="clearFocus"
+                      required
+                    />
+                  </div>
                   <div class="form-group">
                     <label class="required">{{
-                      $t('cruds.download.fields.download')
+                      $t('cruds.examinationResult.fields.examination_result')
                     }}</label>
                     <attachment
-                      :route="getRoute('downloads')"
-                      :collection-name="'download_download'"
-                      :media="entry.download"
+                      :route="getRoute('examination-results')"
+                      :collection-name="'examination_result_examination_result'"
+                      :media="entry.examination_result"
+                      :model-id="$route.params.id"
                       :max-file-size="35"
-                      @file-uploaded="insertDownloadFile"
-                      @file-removed="removeDownloadFile"
+                      @file-uploaded="insertExaminationResultFile"
+                      @file-removed="removeExaminationResultFile"
                       :max-files="1"
                     />
                   </div>
@@ -42,7 +65,7 @@
                     }"
                   >
                     <label class="bmd-label-floating required">{{
-                      $t('cruds.download.fields.name')
+                      $t('cruds.examinationResult.fields.name')
                     }}</label>
                     <input
                       class="form-control"
@@ -52,44 +75,6 @@
                       @focus="focusField('name')"
                       @blur="clearFocus"
                       required
-                    />
-                  </div>
-                  <div
-                    class="form-group bmd-form-group"
-                    :class="{
-                      'has-items': entry.categories_id !== null,
-                      'is-focused': activeField == 'categories'
-                    }"
-                  >
-                    <label class="bmd-label-floating required">{{
-                      $t('cruds.download.fields.categories')
-                    }}</label>
-                    <v-select
-                      name="categories"
-                      label="categories"
-                      :key="'categories-field'"
-                      :value="entry.categories_id"
-                      :options="lists.categories"
-                      :reduce="entry => entry.id"
-                      @input="updateCategories"
-                      @search.focus="focusField('categories')"
-                      @search.blur="clearFocus"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label class="required">{{
-                      $t('cruds.download.fields.photo')
-                    }}</label>
-                    <attachment
-                      :route="getRoute('downloads')"
-                      :collection-name="'download_photo'"
-                      :media="entry.photo"
-                      :max-file-size="10"
-                      :component="'pictures'"
-                      :accept="'image/*'"
-                      @file-uploaded="insertPhotoFile"
-                      @file-removed="removePhotoFile"
-                      :max-files="1"
                     />
                   </div>
                 </div>
@@ -127,40 +112,44 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('DownloadsSingle', ['entry', 'loading', 'lists'])
-  },
-  mounted() {
-    this.fetchCreateData()
+    ...mapGetters('ExaminationResultsSingle', ['entry', 'loading'])
   },
   beforeDestroy() {
     this.resetState()
   },
+  watch: {
+    '$route.params.id': {
+      immediate: true,
+      handler() {
+        this.resetState()
+        this.fetchEditData(this.$route.params.id)
+      }
+    }
+  },
   methods: {
-    ...mapActions('DownloadsSingle', [
-      'storeData',
+    ...mapActions('ExaminationResultsSingle', [
+      'fetchEditData',
+      'updateData',
       'resetState',
-      'insertDownloadFile',
-      'removeDownloadFile',
-      'setName',
-      'setCategories',
-      'insertPhotoFile',
-      'removePhotoFile',
-      'fetchCreateData'
+      'setAcademicYears',
+      'insertExaminationResultFile',
+      'removeExaminationResultFile',
+      'setName'
     ]),
+    updateAcademicYears(e) {
+      this.setAcademicYears(e.target.value)
+    },
     updateName(e) {
       this.setName(e.target.value)
-    },
-    updateCategories(value) {
-      this.setCategories(value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`
     },
     submitForm() {
-      this.storeData()
+      this.updateData()
         .then(() => {
-          this.$router.push({ name: 'downloads.index' })
-          this.$eventHub.$emit('create-success')
+          this.$router.push({ name: 'examination_results.index' })
+          this.$eventHub.$emit('update-success')
         })
         .catch(error => {
           this.status = 'failed'

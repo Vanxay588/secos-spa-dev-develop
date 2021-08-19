@@ -202,6 +202,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 48,
                 'title' => 'download_access',
             ],
+            [
+                'id'    => 49,
+                'title' => 'examination_result_create',
+            ],
+            [
+                'id'    => 50,
+                'title' => 'examination_result_edit',
+            ],
+            [
+                'id'    => 51,
+                'title' => 'examination_result_show',
+            ],
+            [
+                'id'    => 52,
+                'title' => 'examination_result_delete',
+            ],
+            [
+                'id'    => 53,
+                'title' => 'examination_result_access',
+            ],
         ];
 
         Permission::insert($permissions);

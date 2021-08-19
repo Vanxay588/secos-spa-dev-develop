@@ -40,4 +40,8 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin'], 
     // Download
     Route::post('downloads/media', 'DownloadApiController@storeMedia')->name('downloads.storeMedia');
     Route::resource('downloads', 'DownloadApiController');
+
+    // Examination Results
+    Route::post('examination-results/media', 'ExaminationResultsApiController@storeMedia')->name('examination-results.storeMedia');
+    Route::resource('examination-results', 'ExaminationResultsApiController');
 });

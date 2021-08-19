@@ -5,12 +5,12 @@
         <div class="card">
           <div class="card-header card-header-primary card-header-icon">
             <div class="card-icon">
-              <i class="material-icons">assignment</i>
+              <i class="material-icons">campaign</i>
             </div>
-            <h4 class="card-title">
+            <h5 class="card-title">
               {{ $t('global.table') }}
               <strong>{{ $t('cruds.policy.title') }}</strong>
-            </h4>
+            </h5>
           </div>
           <div class="card-body">
             <div class="row">

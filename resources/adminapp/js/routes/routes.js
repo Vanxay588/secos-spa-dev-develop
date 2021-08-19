@@ -154,6 +154,30 @@ const routes = [
         ]
       },
       {
+        path: 'examination-results',
+        name: 'examination_results.index',
+        component: () => import('@cruds/ExaminationResults/Index.vue'),
+        meta: { title: 'cruds.examinationResult.title' }
+      },
+      {
+        path: 'examination-results/create',
+        name: 'examination_results.create',
+        component: () => import('@cruds/ExaminationResults/Create.vue'),
+        meta: { title: 'cruds.examinationResult.title' }
+      },
+      {
+        path: 'examination-results/:id',
+        name: 'examination_results.show',
+        component: () => import('@cruds/ExaminationResults/Show.vue'),
+        meta: { title: 'cruds.examinationResult.title' }
+      },
+      {
+        path: 'examination-results/:id/edit',
+        name: 'examination_results.edit',
+        component: () => import('@cruds/ExaminationResults/Edit.vue'),
+        meta: { title: 'cruds.examinationResult.title' }
+      },
+      {
         path: 'user-management',
         name: 'user_management',
         component: View,

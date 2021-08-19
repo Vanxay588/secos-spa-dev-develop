@@ -8,12 +8,12 @@
               <div class="card-icon">
                 <i class="material-icons">add</i>
               </div>
-              <h4 class="card-title">
+              <h5 class="card-title">
                 {{ $t('global.create') }}
                 <strong>{{
                   $t('cruds.downloadCategory.title_singular')
                 }}</strong>
-              </h4>
+              </h5>
             </div>
             <div class="card-body">
               <back-button></back-button>

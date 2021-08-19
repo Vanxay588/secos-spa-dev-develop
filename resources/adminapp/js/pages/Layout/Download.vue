@@ -5,12 +5,12 @@
         <div class="card">
           <div class="card-header card-header-primary card-header-icon">
             <div class="card-icon">
-              <i class="material-icons">assignment</i>
+              <i class="material-icons">download</i>
             </div>
-            <h4 class="card-title">
+            <h5 class="card-title">
               {{ $t('global.table') }}
               <strong>{{ $t('cruds.download.title') }}</strong>
-            </h4>
+            </h5>
           </div>
           <div class="card-body">
             <div class="row">
@@ -106,7 +106,7 @@ export default {
           tdComp: DatatablePictures
         }
       ],
-      query: { sort: 'id', order: 'desc', limit: 100, s: '' },
+      query: { sort: 'id', order: 'desc', limit: 10, s: '' },
       xprops: {
         module: 'DownloadsIndex',
         route: 'downloads',

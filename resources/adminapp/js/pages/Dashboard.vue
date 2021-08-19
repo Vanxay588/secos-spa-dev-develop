@@ -12,9 +12,9 @@
               <div class="card-icon">
                 <i class="material-icons">{{ chart.icon }}</i>
               </div>
-              <h4 class="card-title">
+              <h5 class="card-title">
                 {{ chart.title }}
-              </h4>
+              </h5>
             </div>
             <div class="card-body">
               <component

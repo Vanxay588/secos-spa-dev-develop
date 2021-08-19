@@ -32,12 +32,6 @@ export default {
           icon: 'dashboard',
           path: { name: 'dashboard' }
         },
-    /*     {
-          title: 'cruds.blog.title',
-          icon: 'feed',
-          path: { name: 'blogs.index' },
-          gate: 'blog_access'
-        }, */
         {
           title: 'cruds.annoucement.title',
           icon: 'announcement',
@@ -83,6 +77,12 @@ export default {
               gate: 'download_access'
             }
           ]
+        },
+         {
+          title: 'cruds.examinationResult.title',
+          icon: 'assignment',
+          path: { name: 'examination_results.index' },
+          gate: 'examination_result_access'
         },
         {
           title: 'cruds.userManagement.title',

@@ -10,7 +10,7 @@
                     		<div class="title" >{{ $t('cruds.contactUs.title') }}</div>
                         </div>
                         <div class="text">
-                             <h4>{{ $t('cruds.contactUs.office_location') }}</h4>
+                             <h5>{{ $t('cruds.contactUs.office_location') }}</h5>
                              <div class="singel-address">
                                <i class="fa fa-home" aria-hidden="true" style="padding:15px"></i>
                                 {{ $t('cruds.contactUs.full_location') }}
