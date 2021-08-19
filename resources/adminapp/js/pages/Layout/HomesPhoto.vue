@@ -62,7 +62,6 @@
       height:0;
       opacity:0;
       color: ghostwhite;
-      text-transform: uppercase;
       word-spacing: 5px;
       text-align: center;
       font-size: 18px;

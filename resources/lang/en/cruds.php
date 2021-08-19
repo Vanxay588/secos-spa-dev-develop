@@ -206,5 +206,6 @@ return [
         'full_location'              => 'Xayyaphoummaram Temple, Kaysone Phomvihane Capital, Savannakhet Province',
         'office_location'            =>  'Office location',
         'phone'                      =>  '02029296649',
+        'whatsapp'                   =>  '02029296649',
     ],
 ];

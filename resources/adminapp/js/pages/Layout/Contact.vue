@@ -19,9 +19,17 @@
                                 <i class="fa fa-phone" aria-hidden="true" style="padding:15px"></i>
                                 {{ $t('cruds.contactUs.phone') }}
                              </div>
+                               <div class="singel-address">
+                                <i class="fa fa-whatsapp" aria-hidden="true" style="padding:15px"></i>
+                                <a href="https://wa.me/02029296649" target="_blank"> {{ $t('cruds.contactUs.whatsapp') }}</a>
+                             </div>
+                               <div class="singel-address">
+                                <i class="fa fa-facebook" aria-hidden="true" style="padding:15px"></i>
+                               <a href="https://www.facebook.com/Officestudy" target="_blank">{{ $t('panel.site_title') }}</a>
+                             </div>
                              <div class="singel-address">
                                 <i class="fa fa-envelope-o" aria-hidden="true" style="padding:15px"></i>
-                               <a href="mailto:Inthapunya@gmail.com">Inthapunya@gmail.com</a>
+                               <a href="mailto:Inthapunya@gmail.com" target="_blank">Inthapunya@gmail.com</a>
                              </div>
                         </div>
                 </div>
