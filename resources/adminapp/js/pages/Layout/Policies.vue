@@ -116,7 +116,7 @@ export default {
           thComp: TranslatedHeader,
         }
       ],
-      query: { sort: 'id', order: 'desc', limit: 100, s: '' },
+      query: { sort: 'id', order: 'desc', limit: 10, s: '' },
       xprops: {
         module: 'PoliciesIndex',
         route: 'policies',

@@ -18,30 +18,6 @@ const routes = [
         meta: { title: 'global.dashboard' }
       },
       {
-        path: 'blogs',
-        name: 'blogs.index',
-        component: () => import('@cruds/Blogs/Index.vue'),
-        meta: { title: 'cruds.blog.title' }
-      },
-      {
-        path: 'blogs/create',
-        name: 'blogs.create',
-        component: () => import('@cruds/Blogs/Create.vue'),
-        meta: { title: 'cruds.blog.title' }
-      },
-      {
-        path: 'blogs/:id',
-        name: 'blogs.show',
-        component: () => import('@cruds/Blogs/Show.vue'),
-        meta: { title: 'cruds.blog.title' }
-      },
-      {
-        path: 'blogs/:id/edit',
-        name: 'blogs.edit',
-        component: () => import('@cruds/Blogs/Edit.vue'),
-        meta: { title: 'cruds.blog.title' }
-      },
-      {
         path: 'annoucements',
         name: 'annoucements.index',
         component: () => import('@cruds/Annoucements/Index.vue'),

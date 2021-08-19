@@ -21,10 +21,6 @@ import DownloadCategoriesIndex from './cruds/DownloadCategories'
 import DownloadCategoriesSingle from './cruds/DownloadCategories/single'
 import DownloadsIndex from './cruds/Downloads'
 import DownloadsSingle from './cruds/Downloads/single'
-import BlogsIndex from './cruds/Blogs'
-import BlogsSingle from './cruds/Blogs/single'
-import Aboutuses from './cruds/Aboutuses'
-
 Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production'
@@ -50,9 +46,6 @@ export default new Vuex.Store({
     DownloadCategoriesSingle,
     DownloadsIndex,
     DownloadsSingle,
-    BlogsIndex,
-    BlogsSingle,
-    Aboutuses
   },
   strict: debug
 })

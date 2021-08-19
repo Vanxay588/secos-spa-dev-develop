@@ -45,15 +45,7 @@ class DashboardApiController extends Controller
             'footer_text'  => 'Lifetime total',
         ]);
 
-        $latest4 = new ChartsService([
-            'title'        => 'Recent post',
-            'chart_type'   => 'latest',
-            'model'        => 'App\Models\Blog',
-            'column_class' => 'col-md-12',
-            'fields'       => ['title', 'body', 'photo'],
-            'limit'        => 5,
-        ]);
 
-        return response()->json(compact('stats0', 'stats1', 'stats2', 'stats3', 'latest4'));
+        return response()->json(compact('stats0', 'stats1', 'stats2', 'stats3'));
     }
 }

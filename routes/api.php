@@ -40,11 +40,4 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin'], 
     // Download
     Route::post('downloads/media', 'DownloadApiController@storeMedia')->name('downloads.storeMedia');
     Route::resource('downloads', 'DownloadApiController');
-
-    // Blog
-    Route::post('blogs/media', 'BlogApiController@storeMedia')->name('blogs.storeMedia');
-    Route::resource('blogs', 'BlogApiController');
-
-    // About Us
-    Route::apiResource('aboutuses', 'AboutUsApiController', ['only' => ['index']]);
 });

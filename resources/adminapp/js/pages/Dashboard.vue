@@ -7,10 +7,6 @@
             v-if="chart.type === 'Stats'"
             :chart-data="chart"
           ></stats-card>
-          <latest-card
-            v-else-if="chart.type === 'Latest'"
-            :chart-data="chart"
-          ></latest-card>
           <div v-else class="card">
             <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
