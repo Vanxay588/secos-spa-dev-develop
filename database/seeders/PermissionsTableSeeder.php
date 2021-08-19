@@ -202,46 +202,6 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 48,
                 'title' => 'download_access',
             ],
-            [
-                'id'    => 49,
-                'title' => 'blog_create',
-            ],
-            [
-                'id'    => 50,
-                'title' => 'blog_edit',
-            ],
-            [
-                'id'    => 51,
-                'title' => 'blog_show',
-            ],
-            [
-                'id'    => 52,
-                'title' => 'blog_delete',
-            ],
-            [
-                'id'    => 53,
-                'title' => 'blog_access',
-            ],
-            [
-                'id'    => 54,
-                'title' => 'about_us_create',
-            ],
-            [
-                'id'    => 55,
-                'title' => 'about_us_edit',
-            ],
-            [
-                'id'    => 56,
-                'title' => 'about_us_show',
-            ],
-            [
-                'id'    => 57,
-                'title' => 'about_us_delete',
-            ],
-            [
-                'id'    => 58,
-                'title' => 'about_us_access',
-            ],
         ];
 
         Permission::insert($permissions);
