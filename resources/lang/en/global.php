@@ -310,8 +310,8 @@ return [
     'team-members'                   => 'Team members',
     'calendar'                       => 'Calendar',
     'messenger'                      => 'Messenger',
-    'or'                             => 'ຫຼື',
-    'surname'                        => 'ນາມສະກຸນ',
+    'or'                             => 'or',
+    'surname'                        => 'Surname',
     'date_of_birth'                  => 'Date of birth',
     'please_confirm'                 =>' Please confirm your password before continuing',
 ];
