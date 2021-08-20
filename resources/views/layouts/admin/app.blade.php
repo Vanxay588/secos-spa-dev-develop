@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <!--meta SEO -->
-    <meta name="description" content="{{ trans('panel.site_title') }}">
-    <meta name="keywords" content="Sangha Education Commission Office of Savannakhet">
-    <meta name="author" content="Sangha Education Commission Office of Savannakhet">
+    <meta name="description" content="{{ trans('panel.site_title') }}, Sangha Education Commission Office of Savannakhet, ແຈ້ງການ, ແບບຮຽນ, ຄູ່ມືຄູ, ຮ່າງເອກະສານ, ຜົນສອບເສັງ, ສຶກສາສົງແຂວງ,ນິຕິກຳ" >
+    <meta name="keywords" content="{{ trans('panel.site_title') }}, Sangha Education Commission Office of Savannakhet, ແຈ້ງການ, ແບບຮຽນ, ຄູ່ມືຄູ, ຮ່າງເອກະສານ, ຜົນສອບເສັງ, ສຶກສາສົງແຂວງ,ນິຕິກຳ">
+    <meta name="author" content="{{ trans('panel.site_title') }}, {{ trans('panel.author') }} "> 
 
     <!-- meta config date/time -->
     <meta name="moment_date_format" content="{{ config('project.moment_date_format') }}" />

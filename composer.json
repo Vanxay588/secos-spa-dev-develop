@@ -1,10 +1,17 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "ຫ້ອງການກຳມາທິການສຶກສາສົງແຂວງສະຫວັນນະເຂດ",
     "keywords": [
-        "framework",
-        "laravel"
+        "ຫ້ອງການກຳມາທິການສຶກສາສົງແຂວງສະຫວັນນະເຂດ",
+        "Sangha Education Commission Office of Savannakhet",
+        "ແຈ້ງການ",
+        "ແບບຮຽນ",
+        "ຄູ່ມືຄູ",
+        "ຮ່າງເອກະສານ",
+        "ຜົນສອບເສັງ",
+        "ສຶກສາສົງແຂວງ",
+        "ນິຕິກຳ"
     ],
     "license": "MIT",
     "require": {

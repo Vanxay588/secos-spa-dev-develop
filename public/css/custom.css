@@ -157,8 +157,9 @@
 
 .about-section .image-column .inner-column .image img{
 	position:relative;
-	width:100%;
+	width:60%;
 	display:block;
+  margin: auto;
 }
 
 .about-section .image-column .inner-column .image .overlay-box .year-box{
