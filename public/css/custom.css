@@ -157,7 +157,7 @@
 
 .about-section .image-column .inner-column .image img{
 	position:relative;
-	width:60%;
+	width:50%;
 	display:block;
   margin: auto;
 }
@@ -168,6 +168,7 @@
 	font-weight:300;
 	line-height:1.4em;
 	text-align: center;
+  margin-top: 3%;
 }
 
 .about-section .image-column .inner-column .image .overlay-box .year-box .number{
