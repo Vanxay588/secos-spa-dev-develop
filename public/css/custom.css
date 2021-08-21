@@ -128,9 +128,11 @@
 
     .home-text {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 18%;
     color: ghostwhite;
+    width: 70%;
+    margin: 10px;
     }
 
     

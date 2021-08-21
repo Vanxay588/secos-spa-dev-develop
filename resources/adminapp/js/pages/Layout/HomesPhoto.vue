@@ -34,9 +34,11 @@
   <style>
   h1 {
       font-size: 30px;
-      font-weight: 800;
+      font-weight: 600;
       color: ghostwhite;
       padding-bottom: 25px;
+      display: contents;
+      line-height: 1.5em;
   }
   p{
     font-weight: 500;  
@@ -50,8 +52,8 @@
       position: relative;
       display: inline-block;
       width: 580px;
-      margin-bottom: 20px;
-      margin-top: 20px;
+    /*   margin-bottom: 20px;
+      margin-top: 20px; */
   }
 
   .changing {
