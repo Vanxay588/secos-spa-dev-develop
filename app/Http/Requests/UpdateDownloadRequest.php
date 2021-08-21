@@ -36,7 +36,6 @@ class UpdateDownloadRequest extends FormRequest
             ],
             'photo' => [
                 'array',
-                'required',
             ],
             'photo.*.id' => [
                 'integer',

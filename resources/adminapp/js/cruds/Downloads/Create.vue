@@ -77,7 +77,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label class="required">{{
+                    <label>{{
                       $t('cruds.download.fields.photo')
                     }}</label>
                     <attachment

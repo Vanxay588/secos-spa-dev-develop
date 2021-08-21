@@ -36,7 +36,6 @@ class StoreDownloadRequest extends FormRequest
             ],
             'photo' => [
                 'array',
-                'required',
             ],
             'photo.*.id' => [
                 'integer',
