@@ -20,7 +20,6 @@ class StoreExaminationResultRequest extends FormRequest
             'academic_years' => [
                 'string',
                 'required',
-                'unique:examination_results',
             ],
             'examination_result' => [
                 'array',

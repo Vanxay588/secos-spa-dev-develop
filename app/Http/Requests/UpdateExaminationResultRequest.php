@@ -20,7 +20,6 @@ class UpdateExaminationResultRequest extends FormRequest
             'academic_years' => [
                 'string',
                 'required',
-                'unique:examination_results,academic_years,' . request()->route('examination_result')->id,
             ],
             'examination_result' => [
                 'array',
