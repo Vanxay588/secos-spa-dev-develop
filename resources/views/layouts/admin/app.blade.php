@@ -36,7 +36,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ mix('/adminapp/css/app.css') }}">
-    <link rel="stylesheet" href="{{ url('/md/css/material-dashboard.css') }}">
+    <link rel="stylesheet" rel="preload" href="{{ url('/md/css/material-dashboard.css') }}">
     <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
 
 </head>
