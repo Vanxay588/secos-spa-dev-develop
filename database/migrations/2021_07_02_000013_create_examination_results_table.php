@@ -10,7 +10,7 @@ class CreateExaminationResultsTable extends Migration
     {
         Schema::create('examination_results', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('academic_years')->unique();
+            $table->string('academic_years');
             $table->string('name');
             $table->timestamps();
         });
