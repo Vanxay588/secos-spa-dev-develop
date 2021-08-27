@@ -46,6 +46,7 @@
   $nav-font-color:  lightseagreen;
   $link-hover-color: #ffc600;
   $border: #ffc600;
+
   .navigation {
     height: $nav-height;
     background: $nav-background;
@@ -142,6 +143,7 @@
         li {
           float: none;
           margin-bottom: 20px;
+          margin-top: 20px;
           a {
             padding: 15px;
             line-height: 20px;
