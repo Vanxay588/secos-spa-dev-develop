@@ -114,6 +114,7 @@
   position:relative;
   top:0;
   z-index:998;
+  margin-bottom: 60px;
   }
   
   .home-text {
@@ -135,6 +136,8 @@
   padding:40px;
   background-color:#f8f8ff;
   border-radius:6px;
+  margin-bottom:1rem;
+  margin-top:1rem;
   }
   
   .about-section .content-column .text {

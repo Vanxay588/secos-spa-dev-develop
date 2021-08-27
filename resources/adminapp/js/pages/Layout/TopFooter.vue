@@ -38,6 +38,7 @@
         color: lightseagreen;
         text-align: center;
         border-top: 3px solid #ffc600;
+        margin-top: 2rem;
       }
       .footer ul {
         margin-bottom: 0;
