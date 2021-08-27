@@ -137,6 +137,7 @@
       padding: $nav-height 0 15px;
           text-align: right;
           background: ghostwhite;
+          border-radius: 10px;
       ul {
         display: none;
        
