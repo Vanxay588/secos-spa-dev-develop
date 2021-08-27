@@ -2,14 +2,14 @@
   <section class="navigation">
     <div class="nav-container">
       <div class="brand">
-       <a href="#">
+       <a href="">
          <span>
           <img src="/images/Logo.png" alt="" style="width:6%">
         </span> 
        </a>
       </div>
       <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#"><i class="fa fa-bars" aria-hidden="true" style="color:lightseagreen"></i></a></div>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><i class="fa fa-bars" aria-hidden="true" style="color:lightseagreen"></i></a></div>
         <ul class="nav-list">
           <li>
             <a href="#homes">{{ $t('cruds.home.title') }}</a>
