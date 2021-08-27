@@ -9,7 +9,7 @@
        </a>
       </div>
       <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><i class="fa fa-bars" aria-hidden="true" style="color:lightseagreen"></i></a></div>
+        <div class="nav-mobile"><a id="nav-toggle" href="#"><i class="fa fa-bars" aria-hidden="true" style="color:lightseagreen"></i></a></div>
         <ul class="nav-list">
           <li>
             <a href="#homes">{{ $t('cruds.home.title') }}</a>
@@ -39,7 +39,6 @@
 
 </template>
 <style lang="scss" scoped>
-    // Navigation Variables
   $content-width: 1000px;
   $breakpoint: 799px;
   $nav-height: 90px;
@@ -47,8 +46,6 @@
   $nav-font-color:  lightseagreen;
   $link-hover-color: #ffc600;
   $border: #ffc600;
-
-  // Outer navigation wrapper
   .navigation {
     height: $nav-height;
     background: $nav-background;
@@ -58,8 +55,6 @@
     z-index: 9999;
     width: 100%;
   }
-
-  // Logo and branding
   .brand {
     position: absolute;
     padding-left: 20px;
@@ -73,14 +68,11 @@
       text-decoration: none;
     }
   }
- 
-  // Container with no padding for navbar
   .nav-container {
     max-width: $content-width;
     margin: 0 auto;
   }
 
-  // Navigation 
   nav {
     float: right;
     ul {
@@ -108,7 +100,7 @@
             padding-left: 4px;
             content: ' ▾';
           }
-        } // Dropdown list
+        }
         ul li {
           min-width: 190px;
           a {
@@ -119,18 +111,12 @@
       }
     }
   }
-
-  // Dropdown list binds to JS toggle event
   .nav-dropdown {
     position: absolute;
     display: none;
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   }
-
-  /* Mobile navigation */
-
-  // Binds to JS Toggle
   .nav-mobile {
     display: none;
     position: absolute;
@@ -139,16 +125,16 @@
     background: $nav-background;
     height: $nav-height;
     width: $nav-height;
+    border-bottom: 3px solid $border;
   }
   @media only screen and (max-width: 798px) {
-    // Hamburger nav visible on mobile only
     .nav-mobile {
       display: block;
     }
     nav {
-    width: 100%;
+
       padding: $nav-height 0 15px;
-          text-align: center;
+          text-align: right;
           background: ghostwhite;
       ul {
         display: none;
@@ -159,6 +145,7 @@
           a {
             padding: 15px;
             line-height: 20px;
+            margin: 30px;
             &:hover {
             color: $link-hover-color;
           }
