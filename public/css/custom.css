@@ -199,11 +199,6 @@
   text-transform:capitalize;
   }
   
-  .map {
-  height:400px;
-  width:100%;
-  }
-  
   #button {
   display:inline-block;
   background-color:#20b2aa;

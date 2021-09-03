@@ -109,11 +109,6 @@ export default {
           field: 'allow_date',
           thComp: TranslatedHeader,
           sortable: true
-        },
-       {
-          title: 'cruds.policy.fields.description',
-          field: 'description',
-          thComp: TranslatedHeader,
         }
       ],
       query: { sort: 'id', order: 'desc', limit: 10, s: '' },

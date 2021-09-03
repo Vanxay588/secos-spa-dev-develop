@@ -2,13 +2,16 @@
      <div class="about-section" id="contactUs">
     	<div class="container">
         	<div class="row clearfix">
-                <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="map"></div>
-                </div>
-                <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                    	<div class="sec-title">
-                    		<div class="title" >{{ $t('cruds.contactUs.title') }}</div>
-                        </div>
+                <div class="content-column col-md-6 col-sm-12 col-xs-12" style="padding: 20px 10px 20px 30px;">
+                        <div class="sec-title">
+                          <div class="title" >{{ $t('cruds.contactUs.title') }}</div>
+                          </div>
+                          <div class="text"> 
+                            <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="437" id="gmap_canvas" src="https://maps.google.com/maps?q=Wat%20Sainyaphum&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><a href="https://www.embedgooglemap.net">embed google map in web page</a></div></div>
+                          </div>
+                  </div>
+                <div class="content-column col-md-6 col-sm-12 col-xs-12" style="padding: 20px;">
+                      <br><br> <br>
                         <div class="text">
                              <h5>{{ $t('cruds.contactUs.office_location') }}</h5>
                              <div class="singel-address">
@@ -44,4 +47,18 @@
     a:hover{
         color:#ffc600;
     }
+     .mapouter
+      {
+      position:relative;
+      text-align:right;
+      height:437px;
+      width:500px;
+      }
+      .gmap_canvas
+      {
+        overflow:hidden;
+        background:none!important;
+        height:437px;
+        width:500px;
+      }
 </style>
