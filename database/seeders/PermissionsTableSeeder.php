@@ -222,6 +222,50 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 53,
                 'title' => 'examination_result_access',
             ],
+            [
+                'id'    => 54,
+                'title' => 'statistic_management_access',
+            ],
+            [
+                'id'    => 55,
+                'title' => 'statistic_category_create',
+            ],
+            [
+                'id'    => 56,
+                'title' => 'statistic_category_edit',
+            ],
+            [
+                'id'    => 57,
+                'title' => 'statistic_category_show',
+            ],
+            [
+                'id'    => 58,
+                'title' => 'statistic_category_delete',
+            ],
+            [
+                'id'    => 59,
+                'title' => 'statistic_category_access',
+            ],
+            [
+                'id'    => 60,
+                'title' => 'statistic_create',
+            ],
+            [
+                'id'    => 61,
+                'title' => 'statistic_edit',
+            ],
+            [
+                'id'    => 62,
+                'title' => 'statistic_show',
+            ],
+            [
+                'id'    => 63,
+                'title' => 'statistic_delete',
+            ],
+            [
+                'id'    => 64,
+                'title' => 'statistic_access',
+            ],
         ];
 
         Permission::insert($permissions);

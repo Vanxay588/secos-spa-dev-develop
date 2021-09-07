@@ -85,6 +85,26 @@ export default {
           gate: 'examination_result_access'
         },
         {
+          title: 'cruds.statisticManagement.title',
+          icon: 'trending_up',
+          path: { name: 'statistic_management' },
+          gate: 'statistic_management_access',
+          children: [
+            {
+              title: 'cruds.statisticCategory.title',
+              icon: 'table_view',
+              path: { name: 'statistic_categories.index' },
+              gate: 'statistic_category_access'
+            },
+            {
+              title: 'cruds.statistic.title',
+              icon: 'table_view',
+              path: { name: 'statistics.index' },
+              gate: 'statistic_access'
+            }
+          ]
+        },
+        {
           title: 'cruds.userManagement.title',
           icon: 'person',
           path: { name: 'user_management' },

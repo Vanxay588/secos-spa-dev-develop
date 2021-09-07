@@ -118,14 +118,14 @@
   }
   
   .home-text {
-  position:absolute;
-  top:35%;
-  left:18%;
-  color:#f8f8ff;
-  width:70%;
-  margin:10px;
-  }
-  
+  position: absolute;
+  color: #f8f8ff;
+  width: 80%;
+  margin: 10px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
   .about-section {
   position:relative;
   padding:20px 0;

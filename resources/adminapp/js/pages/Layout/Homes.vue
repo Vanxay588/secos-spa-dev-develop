@@ -11,6 +11,8 @@
         <hr>
         <ExaminationResults></ExaminationResults>
         <hr>
+        <Statistics></Statistics>
+        <hr>
         <about-us></about-us>
         <hr>
         <contact></contact>
@@ -30,6 +32,7 @@ import ButtomFooter from './ButtomFooter.vue'
 import HomesPhoto from './HomesPhoto.vue'
 import Policies   from  './Policies.vue'
 import Navigation from   './Navigation.vue'
+import Statistics from   './Statistics.vue'
 export default {
   components: {
       TopFooter,
@@ -41,7 +44,8 @@ export default {
       AboutUs,
       Contact,
       Navigation,
-      ExaminationResults
+      ExaminationResults,
+      Statistics
   }
 }
 </script>

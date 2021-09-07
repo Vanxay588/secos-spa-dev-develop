@@ -44,4 +44,13 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin'], 
     // Examination Results
     Route::post('examination-results/media', 'ExaminationResultsApiController@storeMedia')->name('examination-results.storeMedia');
     Route::resource('examination-results', 'ExaminationResultsApiController');
+
+    // Statistic Categories
+    Route::resource('statistic-categories', 'StatisticCategoriesApiController');
+
+    // Statistic
+    Route::post('statistics/media', 'StatisticApiController@storeMedia')->name('statistics.storeMedia');
+    Route::resource('statistics', 'StatisticApiController');
+
+    
 });

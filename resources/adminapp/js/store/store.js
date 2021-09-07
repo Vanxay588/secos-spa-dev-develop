@@ -23,6 +23,10 @@ import DownloadsIndex from './cruds/Downloads'
 import DownloadsSingle from './cruds/Downloads/single'
 import ExaminationResultsIndex from './cruds/ExaminationResults'
 import ExaminationResultsSingle from './cruds/ExaminationResults/single'
+import StatisticCategoriesIndex from './cruds/StatisticCategories'
+import StatisticCategoriesSingle from './cruds/StatisticCategories/single'
+import StatisticsIndex from './cruds/Statistics'
+import StatisticsSingle from './cruds/Statistics/single'
 Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production'
@@ -49,7 +53,11 @@ export default new Vuex.Store({
     DownloadsIndex,
     DownloadsSingle,
     ExaminationResultsIndex,
-    ExaminationResultsSingle
+    ExaminationResultsSingle,
+    StatisticCategoriesIndex,
+    StatisticCategoriesSingle,
+    StatisticsIndex,
+    StatisticsSingle
   },
   strict: debug
 })

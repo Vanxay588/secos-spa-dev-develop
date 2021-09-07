@@ -178,6 +178,62 @@ const routes = [
         meta: { title: 'cruds.examinationResult.title' }
       },
       {
+        path: 'statistic-management',
+        name: 'statistic_management',
+        component: View,
+        redirect: { name: 'statistic_categories.index' },
+        children: [
+          {
+            path: 'statistic-categories',
+            name: 'statistic_categories.index',
+            component: () => import('@cruds/StatisticCategories/Index.vue'),
+            meta: { title: 'cruds.statisticCategory.title' }
+          },
+          {
+            path: 'statistic-categories/create',
+            name: 'statistic_categories.create',
+            component: () => import('@cruds/StatisticCategories/Create.vue'),
+            meta: { title: 'cruds.statisticCategory.title' }
+          },
+          {
+            path: 'statistic-categories/:id',
+            name: 'statistic_categories.show',
+            component: () => import('@cruds/StatisticCategories/Show.vue'),
+            meta: { title: 'cruds.statisticCategory.title' }
+          },
+          {
+            path: 'statistic-categories/:id/edit',
+            name: 'statistic_categories.edit',
+            component: () => import('@cruds/StatisticCategories/Edit.vue'),
+            meta: { title: 'cruds.statisticCategory.title' }
+          },
+          {
+            path: 'statistics',
+            name: 'statistics.index',
+            component: () => import('@cruds/Statistics/Index.vue'),
+            meta: { title: 'cruds.statistic.title' }
+          },
+          {
+            path: 'statistics/create',
+            name: 'statistics.create',
+            component: () => import('@cruds/Statistics/Create.vue'),
+            meta: { title: 'cruds.statistic.title' }
+          },
+          {
+            path: 'statistics/:id',
+            name: 'statistics.show',
+            component: () => import('@cruds/Statistics/Show.vue'),
+            meta: { title: 'cruds.statistic.title' }
+          },
+          {
+            path: 'statistics/:id/edit',
+            name: 'statistics.edit',
+            component: () => import('@cruds/Statistics/Edit.vue'),
+            meta: { title: 'cruds.statistic.title' }
+          }
+        ]
+      },
+      {
         path: 'user-management',
         name: 'user_management',
         component: View,

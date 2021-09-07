@@ -27,6 +27,9 @@
             <a  href="#examinationResult"> {{ $t('cruds.examinationResult.title') }}</a>
           </li>
           <li>
+            <a  href="#statistics"> {{ $t('cruds.statistic.title') }}</a>
+          </li>
+          <li>
             <a  href="#aboutUs">{{ $t('cruds.aboutUs.title') }}</a>
           </li>
           <li>
