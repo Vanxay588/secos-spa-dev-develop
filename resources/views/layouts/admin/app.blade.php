@@ -27,10 +27,9 @@
 
     <!-- Logo and Icon app-->
     <link rel="shortcut icon" sizes="96x96" href="{{ asset('/images/logo.ico') }}">
-    <link rel="icon" type="image/png" href="{{ url('/images/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('/images/Logo.png') }}">
 
     <!-- Font and Icon -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Material+Icons&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 

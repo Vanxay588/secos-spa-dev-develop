@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <!--meta SEO -->
-    <meta name="description" content="{{ trans('panel.site_title') }}">
-    <meta name="keywords" content="Sangha Education Commission Office of Savannakhet">
-    <meta name="author" content="Sangha Education Commission Office of Savannakhet">
+    <meta name="description" content="{{ trans('panel.site_title') }}, Sangha Education Commission Office of Savannakhet, ແຈ້ງການ, ແບບຮຽນ, ຄູ່ມືຄູ, ຮ່າງເອກະສານ, ຜົນສອບເສັງ, ສຶກສາສົງແຂວງ,ນິຕິກຳ" >
+    <meta name="keywords" content="{{ trans('panel.site_title') }}, Sangha Education Commission Office of Savannakhet, ແຈ້ງການ, ແບບຮຽນ, ຄູ່ມືຄູ, ຮ່າງເອກະສານ, ຜົນສອບເສັງ, ສຶກສາສົງແຂວງ,ນິຕິກຳ">
+    <meta name="author" content="{{ trans('panel.site_title') }}, {{ trans('panel.author') }} "> 
 
      <!-- meta Languages -->
     <meta name="app-locale" content="{{ App::getLocale() }}" />
@@ -20,11 +20,10 @@
     <title>{{ trans('panel.site_title') }}</title>
 
     <!-- Logo and Icon app-->
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/images/icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ url('/images/logo.png') }}">
+    <link rel="shortcut icon" sizes="96x96" href="{{ asset('/images/logo.ico') }}">
+    <link rel="icon" type="image/png" href="{{ url('/images/Logo.png') }}">
 
     <!-- Font and Icon -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Material+Icons&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
