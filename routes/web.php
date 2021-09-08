@@ -1,13 +1,13 @@
 <?php
 
-Route::redirect('/', '/homes');
+Route::redirect('/', '/home');
 
 Route::group([
-    'prefix'     => 'homes',
-    'as'         => 'homes.',
-    'namespace'  => 'Homes',
+    'prefix'     => 'home',
+    'as'         => 'home.',
+    'namespace'  => 'Home',
 ], function () {
-    Route::view('/{any?}', 'layouts.admin.app')->name('homes')->where('any', '.*');
+    Route::view('/{any?}', 'layouts.admin.app')->name('home')->where('any', '.*');
 });
 
 Route::redirect('/dashboard', '/admin/dashboard');

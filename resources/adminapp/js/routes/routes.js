@@ -317,12 +317,12 @@ const routes = [
   },
   {
     path: '/',
-    component: () => import('@pages/Layout/Homes.vue'),
-    redirect: 'homes',
+    component: () => import('@pages/Layout/Home.vue'),
+    redirect: 'home',
     children: [
       {
-        path: 'homes',
-        name: 'homes.index',
+        path: 'home',
+        name: 'home.index',
         component: () => import('@cruds/Homes/Index.vue'),
         meta: { title: 'cruds.home.title' }
       }
